@@ -1,0 +1,575 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#f8ead6, #f9e3c6);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Hero Section  */
+
+.hero-section {
+    background-image: url('./Images/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+}
+.eco-about-section{
+    padding: 120px 0;
+    position: relative;
+}
+.eco-about-section-wrapper{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eco-para{
+    max-width: 1028px;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.3px;
+    color: #666666;
+    text-align: center;
+}
+.eco-urbanity-content-section{
+    padding: 120px 0;
+    position: relative;
+}
+.eco-urbanity-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.brown-bg{
+    background: linear-gradient(180deg, #8C5120 0%, #75441B 35%, #75441B 65%, #8C5120 100%);
+}
+.eco-urbanity-content-flex-wrrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.eco-urbanity-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+.eco-urbanity-title{
+    font-family: "Gilda Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 4%;
+    color: #F9E8D2;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: left;
+}
+.eco-urbanity-title-brown{
+    font-family: "Gilda Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 4%;
+    color: #8C5120;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: left;
+}
+.eco-urbanity-para{
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.3px;
+    color: #F9E8D2;
+    max-width: 665px;
+    text-align: left;
+}
+.eco-urbanity-para-brown{
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 31.3px;
+    color: #854D1F;
+    max-width: 665px;
+    text-align: left;
+}
+.eco-urbanity-image-wrapper{
+    width: 588px;
+    height: 364px;
+}
+.eco-urbanity-image-wrapper-brown{
+    width: 588px;
+    height: 364px;
+    border: 1px solid #623916;
+}
+.eco-urbanity-images{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* =========================
+   PILLAR SECTION
+========================= */
+
+.pillar-section {
+    width: 100%;
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+}
+.main-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.pillar-wrapper {
+    position: relative;
+    min-height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   BACKGROUND SHAPE
+========================= */
+
+.pillar-bg-shape {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(161, 111, 61, 0.08);
+    border-radius: 140px;
+    background:
+        linear-gradient(rgba(161, 111, 61, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(161, 111, 61, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.pillar-heading-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.pillar-line {
+    width: 50px;
+    height: 1px;
+    background: #a96d3c;
+    position: relative;
+}
+
+.pillar-line::before,
+.pillar-line::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #a96d3c;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pillar-line::before {
+    left: -3px;
+}
+
+.pillar-line::after {
+    right: -3px;
+}
+
+.pillar-heading {
+    font-size: 42px;
+    color: #a66a39;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* =========================
+   CENTER LOGO
+========================= */
+
+.pillar-center-logo {
+    position: relative;
+    z-index: 2;
+}
+
+.pillar-logo-shape {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.pillar-logo-shape span {
+    position: absolute;
+    background: #9d5b1f;
+}
+
+/* Shape Design */
+
+.pillar-logo-shape span:nth-child(1) {
+    width: 40px;
+    height: 110px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 0 0 40px 40px;
+}
+
+.pillar-logo-shape span:nth-child(2) {
+    width: 110px;
+    height: 40px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 40px 0 0 40px;
+}
+
+.pillar-logo-shape span:nth-child(3) {
+    width: 40px;
+    height: 110px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 40px 40px 0 0;
+}
+
+.pillar-logo-shape span:nth-child(4) {
+    width: 110px;
+    height: 40px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 40px 40px 0;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.pillar-card {
+    position: absolute;
+    width: 270px;
+    text-align: center;
+    color: #6d563f;
+}
+
+.pillar-icon {
+    font-size: 52px;
+    color: #9f6331;
+    margin-bottom: 14px;
+    opacity: 0.9;
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.pillar-title {
+    font-size: 28px;
+    margin-bottom: 14px;
+    font-family: "Cormorant Garamond", serif;
+    color: #7c532d;
+    font-weight: 600;
+}
+
+.pillar-description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(80, 60, 40, 0.8);
+}
+
+/* =========================
+   POSITIONING
+========================= */
+
+.pillar-top-left {
+    top: 140px;
+    left: 110px;
+}
+
+.pillar-top-right {
+    top: 140px;
+    right: 110px;
+}
+
+.pillar-bottom-left {
+    bottom: 220px;
+    left: 80px;
+}
+
+.pillar-bottom-center {
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pillar-bottom-right {
+    bottom: 220px;
+    right: 80px;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+
+    .pillar-heading {
+        font-size: 36px;
+    }
+
+    .pillar-card {
+        width: 240px;
+    }
+
+    .pillar-top-left {
+        left: 40px;
+    }
+
+    .pillar-top-right {
+        right: 40px;
+    }
+
+    .pillar-bottom-left {
+        left: 20px;
+    }
+
+    .pillar-bottom-right {
+        right: 20px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .pillar-wrapper {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 120px 0 80px;
+    }
+
+    .pillar-heading-wrapper {
+        position: relative;
+        top: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pillar-heading {
+        font-size: 34px;
+    }
+
+    .pillar-center-logo {
+        order: 2;
+    }
+
+    .pillar-logo-shape {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pillar-card {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        top: unset;
+        right: unset;
+        left: unset;
+        bottom: unset;
+        transform: none;
+    }
+
+    .pillar-bottom-center {
+        transform: none;
+    }
+
+    .pillar-bg-shape {
+        border-radius: 80px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .pillar-section {
+        padding: 70px 0;
+    }
+
+    .main-container {
+        width: 92%;
+    }
+
+    .pillar-wrapper {
+        gap: 40px;
+        padding: 90px 20px 60px;
+    }
+
+    .pillar-heading {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .pillar-line {
+        width: 30px;
+    }
+
+    .pillar-logo-shape {
+        width: 140px;
+        height: 140px;
+    }
+
+    .pillar-logo-shape span:nth-child(1),
+    .pillar-logo-shape span:nth-child(3) {
+        width: 28px;
+        height: 70px;
+    }
+
+    .pillar-logo-shape span:nth-child(2),
+    .pillar-logo-shape span:nth-child(4) {
+        width: 70px;
+        height: 28px;
+    }
+
+    .pillar-card {
+        max-width: 100%;
+    }
+
+    .pillar-icon {
+        font-size: 42px;
+    }
+
+    .pillar-title {
+        font-size: 24px;
+    }
+
+    .pillar-description {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .pillar-bg-shape {
+        border-radius: 50px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .pillar-heading {
+        font-size: 24px;
+    }
+
+    .pillar-wrapper {
+        padding: 80px 15px 50px;
+    }
+
+    .pillar-title {
+        font-size: 22px;
+    }
+
+    .pillar-description {
+        font-size: 12px;
+    }
+
+    .pillar-icon {
+        font-size: 36px;
+    }
+}
+
+
+.pillar-wrapper {
+    position: relative;
+    min-height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Background Image */
+
+.pillar-wrapper::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background: url("./Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.03;
+
+    z-index: -1; /* IMPORTANT */
+    pointer-events: none;
+}
+
+/* Keep Content Above */
+
+.pillar-heading-wrapper,
+.pillar-center-logo,
+.pillar-card {
+    position: absolute;
+    z-index: 2;
+}

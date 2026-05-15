@@ -1,5 +1,5 @@
 /* ─── NAVBAR ─── */
-.navbar {
+/* .navbar {
     position: relative;
     width: 100%;
     height: 80px;
@@ -10,6 +10,31 @@
     padding: 0 32px;
     border-bottom: 1px solid rgba(180, 120, 40, 0.2);
     z-index: 1000;
+} */
+ /* ─── NAVBAR ─── */
+ .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+
+  /* soft fog transparent effect */
+  background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.55) 0%,
+      rgba(255,255,255,0.28) 35%,
+      rgba(255,255,255,0.10) 65%,
+      rgba(255,255,255,0) 100%
+  );
+
+  z-index: 1000;
 }
 
 /* ─── HAMBURGER ─── */
@@ -60,23 +85,39 @@
 
 /* ─── BOOK NOW BUTTON ─── */
 .book-btn {
-    background: transparent;
-    border: 1px solid #c8892e;
-    color: #c8892e;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    letter-spacing: 3px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.book-btn:hover {
-    background: #c8892e;
-    color: #0d0d0d;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+      90deg,
+      #CE8950 0%,
+      #9B673C 35%,
+      #815632 70%,
+      #684528 100%
+  );
+
+  transition: all 0.3s ease;
 }
 
+/* Hover Effect */
+.book-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+/* Active Click */
+.book-btn:active {
+  transform: scale(0.98);
+}
 /* ─── OVERLAY ─── */
 .overlay {
     display: none;
@@ -98,7 +139,7 @@
     min-width: 220px;
     height: 100vh;
     background: #ffffff;
-    z-index: 950;
+    z-index: 9999;
     transform: translateX(-100%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
@@ -283,7 +324,12 @@
       background: var(--brown);
       color: var(--white);
       width: 100%;
+      background-image: url('./Images/footer-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
+    
  
     .footer-main {
       max-width: 1440px;
@@ -296,12 +342,16 @@
     }
  
     /* ── Logo ─────────────────────────────────────────────── */
-    .footer-logo {
+    .footer-logo{
+      /* width: 350px; */
+      height: 180px;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 14px;
-      padding-top: 10px;
+    }
+    .footer-logo-img {
+      height: 120px;
+      width: 200px;
     }
  
     .logo-icon {
@@ -363,6 +413,8 @@
       color: var(--white);
       letter-spacing: 0.5px;
       margin-bottom: 14px;
+      font-family: "Barlow", sans-serif;
+      text-decoration: none;
     }
     .footer-contact-item.phone svg { color: var(--white); }
  
@@ -375,6 +427,8 @@
       text-decoration: underline;
       text-underline-offset: 3px;
       text-decoration-color: var(--white-30);
+      text-decoration: underline;
+      color: var(--white);
     }
  
     /* ── Quick Links ──────────────────────────────────────── */
@@ -491,11 +545,11 @@
     .footer-divider {
       max-width: 1440px;
       margin: 0 auto;
-      padding: 0 60px;
+      padding: 0 80px;
     }
     .footer-divider hr {
       border: none;
-      border-top: 1px solid var(--border);
+      /* border-top: 1px solid var(--border); */
     }
  
     /* ── Legal Links ──────────────────────────────────────── */
@@ -537,6 +591,11 @@
     }
     .footer-copyright p span { color: var(--white); font-weight: 500; }
  
+    .footer-partner{
+      color: var(--white-60);
+      text-decoration: underline;
+      font-weight: 600;
+    }
     /* ─── RESPONSIVE ─────────────────────────────────────── */
  
     /* Tablet */

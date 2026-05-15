@@ -350,3 +350,6 @@
     .smart-move-section { padding: 40px 20px; }
     .smart-move-fields { flex-direction: column; }
   }
+  .form-col{
+    width: 100%;
+  }

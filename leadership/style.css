@@ -246,3 +246,362 @@ body {
 .color1{
   background-color: #E5E1E8;
 }
+
+
+/* ============================================================
+   RESPONSIVE MEDIA QUERIES — LEADERSHIP PAGE
+   Breakpoints: Tablet ≤ 1024px | Mobile ≤ 768px | Small ≤ 480px
+   ============================================================ */
+
+
+/* ─────────────────────────────────────────
+   TABLET  (≤ 1024px)
+───────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+
+  /* --- Hero --- */
+  .hero-section {
+      height: 70vh;
+  }
+
+  /* --- Our Journey --- */
+  .our-journey {
+      padding: 70px 24px;
+  }
+
+  .heading-title {
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+  }
+
+  .our-journey-para {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+  }
+
+  /* --- Founder Section --- */
+  .founder-section {
+      padding: 80px 24px;
+  }
+
+  .founder-section-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+  }
+
+  .founder-content-wrapper {
+      max-width: 100%;
+      gap: 36px;
+  }
+
+  .founder-content-wrapper-top h3 {
+      font-size: 34px;
+      line-height: 40px;
+  }
+
+  .founder-content-wrapper-top p {
+      font-size: 18px;
+      line-height: 28px;
+  }
+
+  .founder-image-wrapper {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+  }
+
+  /* --- Our Team --- */
+  .our-team {
+      padding: 80px 24px;
+  }
+
+  .our-team-wrapper {
+      gap: 50px;
+  }
+
+  .our-team-para {
+      font-size: 16px;
+      text-align: center;
+      max-width: 680px;
+  }
+
+  .our-team-content-wrapper {
+      gap: 32px;
+  }
+
+  .our-team-card {
+      width: calc(50% - 16px);
+      height: auto;
+  }
+
+  .our-team-card-image-wrapper {
+      height: 320px;
+  }
+
+  .our-team-card-content-wrapper {
+      padding: 24px;
+  }
+
+  .our-team-card-title {
+      font-size: 20px;
+  }
+
+  .our-team-card-subtitle {
+      font-size: 14px;
+  }
+}
+
+
+/* ─────────────────────────────────────────
+ MOBILE  (≤ 768px)
+───────────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+  /* --- Hero --- */
+  .hero-section {
+      height: 55vh;
+      background-position: center top;
+  }
+
+  /* --- Our Journey --- */
+  .our-journey {
+      padding: 56px 20px;
+  }
+
+  .our-journey-wrapper {
+      gap: 1.2rem;
+  }
+
+  .heading-sub-title {
+      font-size: 12px;
+      line-height: 22px;
+  }
+
+  .heading-title {
+      font-size: 26px;
+      line-height: 36px;
+  }
+
+  .our-journey-para {
+      font-size: 15px;
+      line-height: 26px;
+  }
+
+  /* --- Founder Section --- */
+  .founder-section {
+      padding: 60px 20px;
+  }
+
+  .founder-section-wrapper {
+      gap: 36px;
+  }
+
+  .founder-content-wrapper {
+      gap: 28px;
+  }
+
+  .founder-sub-title {
+      font-size: 13px;
+  }
+
+  .founder-content-wrapper-top h3 {
+      font-size: 28px;
+      line-height: 34px;
+  }
+
+  .founder-content-wrapper-top p {
+      font-size: 15px;
+      line-height: 26px;
+  }
+
+  .founder-btn {
+      padding: 18px 28px;
+      font-size: 13px;
+      max-width: 160px;
+      max-height: unset;
+  }
+
+  .founder-image-wrapper {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+  }
+
+  /* --- Our Team --- */
+  .our-team {
+      padding: 60px 20px;
+  }
+
+  .our-team-wrapper {
+      gap: 40px;
+  }
+
+  .our-team-para {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .our-team-content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+  }
+
+  .our-team-card {
+      width: 100%;
+      max-width: 440px;
+      height: auto;
+  }
+
+  .our-team-card-image-wrapper {
+      height: 300px;
+  }
+
+  .our-team-card-content-wrapper {
+      padding: 20px;
+      gap: 0.75rem;
+  }
+
+  .our-team-card-title {
+      font-size: 20px;
+  }
+
+  .our-team-card-subtitle {
+      font-size: 14px;
+      line-height: 22px;
+  }
+
+  .our-team-roles {
+      font-size: 13px;
+      padding: 10px 12px;
+      max-width: 200px;
+      max-height: unset;
+      top: 14px;
+      left: 14px;
+  }
+
+  /* --- Footer --- */
+  .footer-main {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 48px 20px;
+  }
+
+  .footer-legal {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      padding: 16px 20px;
+  }
+
+  .footer-copyright {
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 13px;
+  }
+}
+
+
+/* ─────────────────────────────────────────
+ SMALL MOBILE  (≤ 480px)
+───────────────────────────────────────── */
+
+@media (max-width: 480px) {
+
+  /* --- Hero --- */
+  .hero-section {
+      height: 45vh;
+  }
+
+  /* --- Our Journey --- */
+  .our-journey {
+      padding: 44px 16px;
+  }
+
+  .heading-title {
+      font-size: 22px;
+      line-height: 30px;
+  }
+
+  .our-journey-para {
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  /* --- Founder Section --- */
+  .founder-section {
+      padding: 48px 16px;
+  }
+
+  .founder-content-wrapper-top h3 {
+      font-size: 24px;
+      line-height: 30px;
+  }
+
+  .founder-content-wrapper-top p {
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  .founder-btn {
+      padding: 16px 24px;
+      font-size: 12px;
+      max-width: 148px;
+  }
+
+  /* --- Our Team --- */
+  .our-team {
+      padding: 48px 16px;
+  }
+
+  .our-team-card {
+      max-width: 100%;
+  }
+
+  .our-team-card-image-wrapper {
+      height: 260px;
+  }
+
+  .our-team-card-content-wrapper {
+      padding: 16px;
+  }
+
+  .our-team-card-title {
+      font-size: 18px;
+  }
+
+  .our-team-card-subtitle {
+      font-size: 13px;
+      line-height: 20px;
+  }
+
+  .our-team-roles {
+      font-size: 12px;
+      padding: 8px 10px;
+      max-width: 180px;
+      top: 10px;
+      left: 10px;
+  }
+
+  /* --- Footer --- */
+  .footer-main {
+      padding: 36px 16px;
+      gap: 32px;
+  }
+
+  .footer-legal {
+      font-size: 12px;
+      gap: 10px;
+  }
+
+  .footer-copyright {
+      font-size: 12px;
+  }
+}

@@ -49,3 +49,65 @@ body {
     color: #666666;
     text-align: left;
 }
+/* =========================
+   TAB RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+
+    .main-container{
+        padding: 0 2rem;
+    }
+
+    .disclaimer-section{
+        padding: 160px 0 90px 0;
+    }
+
+    .disclaimer-section-title{
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .disclaimer-section-para{
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .main-container{
+        padding: 0 1.2rem;
+    }
+
+    .disclaimer-section{
+        padding: 130px 0 60px 0;
+    }
+
+    .disclaimer-section-wrapper{
+        gap: 0.8rem;
+    }
+
+    .disclaimer-section-title{
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .disclaimer-section-para{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+  }

@@ -91,7 +91,7 @@
   }
 
   .info-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Gilda Display", serif;
     font-size: 26px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -99,6 +99,7 @@
   }
 
   .info-subtitle {
+    font-family: "Barlow", sans-serif;
     font-size: 13px;
     color: var(--text-muted);
     margin-top: 6px;
@@ -116,10 +117,11 @@
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    font-size: 13.5px;
-    font-weight: 300;
-    line-height: 1.5;
-    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 14px;
+    font-family: "Barlow", sans-serif;
   }
 
   .info-icon {
@@ -253,4 +255,19 @@
     .contact-info { width: 100%; padding: 36px 28px; }
     .contact-form-panel { padding: 36px 28px; }
     .form-row { flex-direction: column; gap: 0; }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./Images/Contact-Mob.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+    .page-title{
+      display: none;
+    }
   }

@@ -305,3 +305,19 @@
         .partner-card { width: 150px; height: 130px; }
         .reg-row, .file-row { flex-direction: column; }
       }
+
+
+
+
+      @media (max-width: 768px) {
+        .hero-section {
+          background-image: url("./Images/Channel-Mob.png");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 70vh;
+        }
+        .page-title{
+            display: none;
+        }
+      }

@@ -152,9 +152,9 @@ body {
 ========================= */
 
 .soil-letter {
-    font-size: 130px;
+    font-size: 200px;
     line-height: 1;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Gilda Display", serif;
     font-weight: 300;
     color: #f6e6d2;
     flex-shrink: 0;
@@ -171,14 +171,13 @@ body {
 .soil-title {
     font-size: 48px;
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
     font-family: "Cormorant Garamond", serif;
 }
 
 .soil-description {
     font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.88);
 }
 
@@ -187,7 +186,6 @@ body {
 }
 
 .soil-points li {
-    margin-bottom: 10px;
     line-height: 1.7;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.9);
@@ -356,3 +354,14 @@ body {
         height: 220px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./Images/soil-mobile.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+  }

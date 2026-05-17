@@ -440,3 +440,16 @@ body {
         height: 240px;
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./Images/Des-Pros-Mobile.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+  }

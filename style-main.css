@@ -28,21 +28,22 @@
 /* Why Choose Us Section */
 
 .why-choose-us-section {
-    width: 100%;
-    padding: 70px 0;
-    background:
+  width: 100%;
+  padding: 70px 0;
+  background:
       linear-gradient(
-        90deg,
-        #8c512074 0%,
-        #75441ba7 35%,
-        #75441b7c 70%,
-        #8c512075 100%
+          90deg,
+          rgba(140, 81, 32, 0.88) 0%,
+          rgba(117, 68, 27, 0.92) 50%,
+          rgba(140, 81, 32, 0.88) 100%
       ),
       url("./Images/overlay-image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
   .why-choose-us-section-wrapper {
     display: flex;
     justify-content: space-between;
@@ -61,15 +62,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    gap: 0.5rem;
   }
   .why-choose-us-card-title {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0;
     color: #ffffff;
     text-align: left;
+    text-transform: uppercase;
   }
   .why-choose-us-card-para {
     font-size: 13px;
@@ -83,20 +85,21 @@
 
 .tula-properties-about-section{
   padding: 100px 0;
+  position: relative;
 }
 .tula-properties-about-section-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .tula-properties-about-title-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0rem;
 }
 .tula-properties-about-subtitle{
   font-family: "Barlow", sans-serif;
@@ -108,7 +111,7 @@
 }
 .tula-properties-about-title{
   font-family: "Gilda Display", serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
   line-height: 56.25px;
   letter-spacing: 4%;
@@ -130,7 +133,13 @@
   color: #666666;
   text-align: left;
 }
-
+.tula-properties-about-floating-logo{
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+}
 
 
 
@@ -145,7 +154,7 @@
     .soil-heading {
       /* background: #e8dcc8; */
       text-align: center;
-      padding: 28px 20px;
+      padding: 0 20px 28px 20px;
     }
 
     .soil-heading h3 {
@@ -236,7 +245,7 @@
       font-size: 15px;
       line-height: 1.7;
       max-width: 300px;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.6);
     }
 
     /* Tablet */
@@ -358,12 +367,11 @@
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 70px;
+  padding: 90px 70px 70px;
   position: relative;
   overflow: hidden;
   transition: 0.4s ease;
-  box-shadow:
-      0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
@@ -380,9 +388,12 @@
   top: 22px;
   left: 80px;
   padding: 25px 25px;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 17.6px;
-  font-weight: bold;
+  letter-spacing: 0%;
+  color: #1F1F1F;
 }
 
 .second-box {
@@ -432,9 +443,12 @@
 }
 
 .project-description {
-  font-size: 15px;
-  line-height: 1.9;
-  color: #6a6a6a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #1F1F1F;
   margin-bottom: 30px;
 }
 
@@ -443,14 +457,21 @@
 }
 
 .project-details p {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #1F1F1F;
 }
 
 .project-details span {
-  font-weight: 700;
-  color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #1F1F1F;
 }
 
 /* Button */
@@ -459,8 +480,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 52px;
+  width: 162px;
+  height: 46px;
   background: #d8853f;
   color: white;
   text-decoration: none;
@@ -623,7 +644,12 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      background: linear-gradient(90deg, #c6854d 0%, #6b4527 100%);
+      background: linear-gradient(
+    90deg,
+    #8C5120 0%,
+    #75441B 50%,
+    #8C5120 100%
+);
       padding: 60px 0 50px;
     }
     
@@ -635,12 +661,15 @@
     }
     
     .tula-testimonial-heading {
-      text-align: center;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
+      font-family: "Gilda Display", serif;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 56.25px;
+      letter-spacing: 0%;
+      color: #FFFFFF;
+      text-transform: uppercase;
       margin-bottom: 40px;
-      letter-spacing: 0.2px;
+      text-align: center;
     }
     
     /* Track Area */
@@ -689,17 +718,21 @@
     }
     
     .tula-testimonial-client {
-      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
       font-weight: 600;
-      color: #fff;
+      line-height: 16.8px;
+      color: #FFFFFF;
       margin-bottom: 10px;
     }
     
     .tula-testimonial-text {
-      font-size: 13px;
-      line-height: 2;
-      font-weight: 300;
-      color: rgba(255, 255, 255, 0.92);
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22.8px;
+      color: #FFFFFF;
+      letter-spacing: 0%;
       max-width: 95%;
     }
     
@@ -885,6 +918,7 @@
         font-weight: 400;
         line-height: 56.25px;
         color: #8C5120;
+        text-transform: uppercase;
     }
     .blogs-content-wrapper{
         display: flex;
@@ -954,5 +988,15 @@
       .why-choose-us-section-wrapper{
         flex-direction: column;
         gap: 4rem;
+      }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .hero-video{
+        height: 62vh;
+        object-fit: cover;
       }
     }

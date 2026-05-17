@@ -48,6 +48,15 @@ body, html{
     letter-spacing: 3%;
     color: #1F1F1F;
 }
+.page-title{
+  font-family: "Gilda Display", serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 48.3px;
+  letter-spacing: 8px;
+  color: #F8E8D1;
+  text-transform: uppercase;
+}
 a {
     text-decoration: none;
     color: inherit;

@@ -71,3 +71,117 @@ body {
 .privacy-policy-left{
     margin-left: 3rem;
 }
+
+
+.hero-section {
+    display: flex;
+    justify-content: end !important;
+    align-items: center;
+    padding-right: 15rem;
+}
+
+
+/* =========================
+   TAB RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+
+    .main-container{
+        padding: 0 2rem;
+    }
+
+    .hero-section{
+        height: 75vh;
+        padding-right: 6rem;
+        background-position: center;
+    }
+
+    .page-title{
+        font-size: 48px;
+        text-align: right;
+    }
+
+    .privacy-policy-section{
+        padding: 80px 0;
+    }
+
+    .privacy-policy-title{
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .privacy-policy-para{
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .privacy-policy-left{
+        margin-left: 2rem;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .main-container{
+        padding: 0 1.2rem;
+    }
+
+    .hero-section {
+        background-image: url("./Images/Privacy-Mob.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55vh;
+        justify-content: center !important;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .page-title{
+        display: none;
+    }
+
+    .privacy-policy-section{
+        padding: 60px 0;
+    }
+
+    .privacy-policy-section-wrapper{
+        gap: 0.8rem;
+    }
+
+    .privacy-policy-title{
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .privacy-policy-para{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .privacy-policy-left{
+        margin-left: 1.2rem;
+    }
+
+    .privacy-policy-left li{
+        margin-bottom: 0.8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./Images/Privacy-Mob.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+    .page-title{
+        display: none;
+    }
+  }

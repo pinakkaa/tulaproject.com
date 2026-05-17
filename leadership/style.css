@@ -605,3 +605,15 @@ body {
       font-size: 12px;
   }
 }
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+      background-image: url("./Images/Leadership-Mob.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+    }
+  }

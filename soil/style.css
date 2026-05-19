@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 33px;
+    gap: 1.6rem;
 }
 .soil-about-title{
     font-family: "Gilda Display", serif;
@@ -63,11 +63,12 @@ body {
 }
 .soil-about-title-para{
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 31.3px;
+    line-height: 26px;
     color: #666666;
     max-width: 1000px;
+    letter-spacing: 0.6px;
     text-align: center;
 }
 
@@ -155,9 +156,10 @@ body {
     font-size: 200px;
     line-height: 1;
     font-family: "Gilda Display", serif;
-    font-weight: 300;
+    font-weight: 100;
     color: #f6e6d2;
     flex-shrink: 0;
+    padding-top: 2.5rem;
 }
 
 /* =========================
@@ -172,13 +174,14 @@ body {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 5px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Gilda Display", serif;
 }
 
 .soil-description {
     font-size: 15px;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.733);
+    margin-bottom: 0.8rem;
 }
 
 .soil-points {
@@ -187,7 +190,7 @@ body {
 
 .soil-points li {
     line-height: 1.7;
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.9);
 }
 

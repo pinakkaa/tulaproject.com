@@ -56,12 +56,12 @@
 
   .career-header p {
     font-family: "Barlow", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26.25px;
-    color: #212529;
+    line-height: 22px;
+    color: #212529e1;
     text-align: center;
-    max-width: 1220px;
+    max-width: 1020px;
     margin: 0 auto;
   }
 
@@ -70,6 +70,7 @@
     display: flex;
     gap: 60px;
     align-items: flex-start;
+    padding: 0 5rem  ;
   }
 
   /* ── Left: Accordion ── */
@@ -80,8 +81,11 @@
   .accordion-item {
     background: #ffffff;
     border: 1px solid #e8d5bf;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
     overflow: hidden;
+  }
+  .accordion-header span{
+    color: #623916;
   }
 
   .accordion-header {
@@ -274,7 +278,7 @@
   .smart-move-section h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 100;
     color: #fff8f0;
     letter-spacing: 0.1em;
     text-transform: uppercase;

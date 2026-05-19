@@ -54,20 +54,20 @@ body {
 }
 .design-philosophy-title {
     font-family: "Gilda Display", serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56.25px;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 45px;
     letter-spacing: 4%;
-    color: #F8E7D1;
+    color: #f8e7d1f3;
     text-transform: uppercase;
 }
 .design-philosophy-para {
     font-family: "Barlow", sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 31.3px;
-    color: #F8E6CE;
-    max-width: 1000px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    color: #f8e7d1c5;
+    max-width: 900px;
     text-align: center;
 }
 .design-philosophy-ul{
@@ -78,9 +78,9 @@ body {
 }
 .design-philosophy-ul{
     font-family: "Barlow", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31.3px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
     color: #F8E6CE;
 }
 .design-philosophy-links-wrapper {
@@ -208,7 +208,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 80px;
 }
 .philosophy-title-wrapper{
     width: 100%;
@@ -219,10 +219,10 @@ body {
 }
 .philosophy-title{
     font-family: "Gilda Display", serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56.25px;
-    letter-spacing: 9%;
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 45px;
+    letter-spacing: 5px;
     color: #824B1E;
     text-transform: uppercase;
 }
@@ -257,8 +257,8 @@ body {
 }
 .philosophy-text-title{
     font-family: "Gilda Display", serif;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 100;
     line-height: 56.25px;
     letter-spacing: 9%;
     color: #824B1E;
@@ -269,9 +269,13 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 31.3px;
-    color: #854D1F;
+    color: #854d1fd6;
     max-width: 1000px;
     text-align: right;
+    letter-spacing: 1px;
+}
+.text-aln-left{
+    text-align: left !important;
 }
 .philosophy-image-wrapper{
     width: 722px;

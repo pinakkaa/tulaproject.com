@@ -178,11 +178,12 @@ body {
 
 .recent-post-heading {
     font-family: "Gilda Display", serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 33.6px;
-    letter-spacing: 0%;
+    letter-spacing: 2%;
     color: #623916;
+    margin-bottom: 2rem;
 }
 
 /* Small Cards */
@@ -402,8 +403,8 @@ body {
 
 .blog-details-heading {
     font-family: "Gilda Display", serif;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 100;
     line-height: 56.25px;
     letter-spacing: 0%;
     color: #8C5120;
@@ -471,9 +472,9 @@ body {
 
 .blog-main-title {
     font-family: "Gilda Display", serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56.25px;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 44px;
     letter-spacing: 4%;
     color: #8C5120;
     width: 100%;
@@ -488,9 +489,9 @@ body {
 
 .blog-paragraph {
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 31.3px;
+    line-height: 26px;
     color: #666666;
     text-align: left;
     margin-bottom: 28px;
@@ -498,9 +499,9 @@ body {
 
 .blog-sub-heading {
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 31.3px;
+    line-height: 26px;
     color: #666666;
     text-align: left;
     margin-bottom: 18px;
@@ -673,13 +674,20 @@ body {
 
 .recent-post-heading {
     font-family: "Gilda Display", serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 33.6px;
-    letter-spacing: 0%;
+    letter-spacing: 2%;
     color: #623916;
+    margin-bottom: 2rem;
 }
-
+.recent-post-title-new{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24.5px;
+    color: #181A20;
+}
 /* =========================
    WRAPPER
 ========================= */
@@ -688,6 +696,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 36px;
+    padding: 0 3rem;
 }
 
 /* =========================
@@ -891,7 +900,9 @@ body {
 }
 
 
-
+.mb-8{
+    margin-bottom: 4px;
+}
 
 @media (max-width: 768px) {
     .hero-section {

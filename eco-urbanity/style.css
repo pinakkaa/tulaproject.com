@@ -45,10 +45,10 @@ body {
     max-width: 1028px;
     text-align: center;
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
-    line-height: 31.3px;
-    color: #666666;
+    line-height: 28px;
+    color: #666666dd;
     text-align: center;
 }
 .eco-urbanity-content-section{
@@ -61,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    padding: 0 5rem;
 }
 .brown-bg{
     background: linear-gradient(180deg, #8C5120 0%, #75441B 35%, #75441B 65%, #8C5120 100%);
@@ -84,42 +85,46 @@ body {
 .eco-urbanity-title{
     font-family: "Gilda Display", serif;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 43px;
     letter-spacing: 4%;
-    color: #F9E8D2;
+    color: #f9e8d2d2;
     width: 100%;
     text-transform: uppercase;
+    letter-spacing: 1px;
     text-align: left;
 }
 .eco-urbanity-title-brown{
     font-family: "Gilda Display", serif;
-    font-size: 30px;
-    font-weight: 400;
+    font-size:28px;
+    font-weight: 100;
     line-height: 43px;
     letter-spacing: 4%;
     color: #8C5120;
     width: 100%;
     text-transform: uppercase;
+    letter-spacing: 1px;
     text-align: left;
 }
 .eco-urbanity-para{
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 31.3px;
-    color: #F9E8D2;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 28px;
+    color: #f9e8d2ca;
+    letter-spacing: 1px;
     max-width: 665px;
-    text-align: left;
+    text-align: justify;
 }
 .eco-urbanity-para-brown{
     font-family: "Barlow", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 31.3px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 28px;
     color: #854D1F;
     max-width: 665px;
-    text-align: left;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 .eco-urbanity-image-wrapper{
     width: 588px;
@@ -221,10 +226,10 @@ body {
 }
 
 .pillar-heading {
-    font-size: 42px;
+    font-size: 35px;
     color: #a66a39;
     font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
+    font-weight: 100;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -304,22 +309,26 @@ body {
     margin-bottom: 14px;
     opacity: 0.9;
     height: 100px;
-    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
     object-fit: contain;
 }
 
 .pillar-title {
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 14px;
     font-family: "Cormorant Garamond", serif;
-    color: #7c532d;
-    font-weight: 600;
+    color: #222222;
+    font-weight: 100;
+    text-align: left;
 }
 
 .pillar-description {
     font-size: 14px;
     line-height: 1.8;
-    color: rgba(80, 60, 40, 0.8);
+    color: #666666ce;
+    text-align: justify;
 }
 
 /* =========================

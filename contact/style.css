@@ -93,7 +93,7 @@
   .info-title {
     font-family: "Gilda Display", serif;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.2;
   }
@@ -101,7 +101,7 @@
   .info-subtitle {
     font-family: "Barlow", sans-serif;
     font-size: 13px;
-    color: var(--text-muted);
+    color: #C9C9C9;
     margin-top: 6px;
     font-weight: 300;
     letter-spacing: 0.03em;
@@ -115,19 +115,19 @@
 
   .info-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 14px;
     font-size: 14px;
-    font-weight: 400;
-    color: var(--white);
+    font-weight: 600;
+    color: #F9E8D2;
     margin-bottom: 14px;
     font-family: "Barlow", sans-serif;
   }
 
   .info-icon {
-    width: 34px;
-    height: 34px;
-    border: 1.5px solid rgba(255,248,240,0.35);
+    width: 30px;
+    height: 30px;
+    /* border: 1.5px solid rgba(255,248,240,0.35); */
     border-radius: 50%;
     display: flex;
     align-items: center;

@@ -92,6 +92,8 @@
 
   .info-title {
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 0.02em;

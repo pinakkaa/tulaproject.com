@@ -1027,6 +1027,8 @@ main {
     align-items: center;
     gap: 3px;
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 15px;
     font-weight: 400;
     line-height: 100%;

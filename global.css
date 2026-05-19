@@ -1,3 +1,5 @@
+@import url("./headings.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -23,21 +25,8 @@ body, html{
     letter-spacing: 60%;
     color: #DB7D3F;
 }
-.section-title{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: 0%;
-    color: #1F1F1F;
-}
-.section-title-big{
-    font-family: "Montserrat", sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: 10%;
-    text-transform: uppercase;
+.section-title,
+.section-title-big {
     color: #1F1F1F;
 }
 .section-para{
@@ -48,14 +37,8 @@ body, html{
     letter-spacing: 3%;
     color: #1F1F1F;
 }
-.page-title{
-  font-family: "Gilda Display", serif;
-  font-size: 65px;
-  font-weight: 400;
-  line-height: 48.3px;
-  letter-spacing: 8px;
+.page-title {
   color: #F8E8D1;
-  text-transform: uppercase;
 }
 a {
     text-decoration: none;

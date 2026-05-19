@@ -62,13 +62,7 @@ body {
   text-transform: uppercase;
 }
 .heading-title {
-  font-family: "Gilda Display", serif;
-  font-size: 32px;
-  font-weight: 100;
-  line-height: 45px;
-  letter-spacing: 1px;
   color: #8c5120e3;
-  text-transform: uppercase;
 }
 .our-journey-para {
   font-family: "Barlow", sans-serif;
@@ -289,12 +283,6 @@ body {
       padding: 70px 24px;
   }
 
-  .heading-title {
-      font-size: 32px;
-      line-height: 44px;
-      text-align: center;
-  }
-
   .our-journey-para {
       font-size: 18px;
       line-height: 28px;
@@ -399,11 +387,6 @@ body {
   .heading-sub-title {
       font-size: 12px;
       line-height: 22px;
-  }
-
-  .heading-title {
-      font-size: 26px;
-      line-height: 36px;
   }
 
   .our-journey-para {
@@ -542,11 +525,6 @@ body {
   /* --- Our Journey --- */
   .our-journey {
       padding: 44px 16px;
-  }
-
-  .heading-title {
-      font-size: 22px;
-      line-height: 30px;
   }
 
   .our-journey-para {

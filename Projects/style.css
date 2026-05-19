@@ -81,12 +81,7 @@ body {
   text-transform: uppercase;
   color: #666666;
 }
-.about-title{
-  font-family: "Gilda Display", serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56.25px;
-  text-transform: uppercase;
+.about-title {
   color: #8C5120;
 }
 .about-logo{
@@ -124,6 +119,8 @@ body {
 }
 .about-points h3{
   font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 23px;
   font-weight: 700;
   line-height: 14.95px;
@@ -131,6 +128,8 @@ body {
 }
 .about-points p{
   font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 11px;
   font-weight: 400;
   line-height: 16.8px;
@@ -333,12 +332,7 @@ body {
 
 .resort-content h2 {
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Gilda Display", serif;
   color: #F8E7D2;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 14%;
 }
 
 .resort-content p {
@@ -535,13 +529,8 @@ body {
   width: 100%;
   text-align: center;
 }
-.project-title{
-  font-family: "Gilda Display", serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56.25px;
+h2.project-title {
   color: #8C5120;
-  letter-spacing: 14%;
 }
 .project-content-wrapper{
   display: flex;
@@ -579,7 +568,9 @@ body {
 }
 .project-card-title{
   font-family: "Gilda Display", serif;
-  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
   font-weight: 400;
   line-height: 56.25px;
   letter-spacing: 14%;
@@ -591,7 +582,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 26.25px;
-  max-width: 700px;
+  max-width: 650px;
   color: #8C5120;
 }
 
@@ -775,12 +766,7 @@ body {
 
 .outdoor-content h2 {
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Gilda Display", serif;
   color: #8C5120;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 14%;
 }
 
 .outdoor-content p {
@@ -984,12 +970,7 @@ body {
 }
 
 .sports-area-header h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 40px;
-  font-weight: 400;
   color: #8C5120;
-  line-height: 56.25px;
-  text-transform: uppercase;
 }
 
 .sports-area-header p {
@@ -1437,13 +1418,8 @@ body {
 }
 
 .nature-bottom-content h2 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  font-weight: 500;
-  letter-spacing: 2px;
   color: #a66a3d;
   margin-bottom: 12px;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
 
 .nature-bottom-content h4 {
@@ -1685,6 +1661,8 @@ body {
 
 .location-advantages-title {
   font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -1941,12 +1919,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.masterplan-title{
-  font-family: "Gilda Display", serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 56.25px;
-  text-transform: uppercase;
+.masterplan-title {
   color: #8C5120;
 }
 .masterplan-contetn-wrapper{

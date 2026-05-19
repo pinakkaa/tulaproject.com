@@ -44,14 +44,8 @@ body {
     width: 100%;
     text-align: left;
 }
-.privacy-policy-title{
-    font-family: "Gilda Display", serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56.25px;
-    letter-spacing: 4%;
+.privacy-policy-title {
     color: #8C5120;
-    text-transform: uppercase;
 }
 .privacy-policy-content-wrapper{
     width: 100%;

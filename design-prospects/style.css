@@ -53,13 +53,7 @@ body {
     gap: 1rem;
 }
 .design-philosophy-title {
-    font-family: "Gilda Display", serif;
-    font-size: 32px;
-    font-weight: 100;
-    line-height: 45px;
-    letter-spacing: 4%;
     color: #f8e7d1f3;
-    text-transform: uppercase;
 }
 .design-philosophy-para {
     font-family: "Barlow", sans-serif;
@@ -112,12 +106,6 @@ body {
         gap: 50px;
     }
 
-    .design-philosophy-title {
-        font-size: 34px;
-        line-height: 48px;
-        text-align: center;
-    }
-
     .design-philosophy-para {
         font-size: 19px;
         line-height: 30px;
@@ -160,12 +148,6 @@ body {
 
     .design-philosophy-wrapper {
         gap: 40px;
-    }
-
-    .design-philosophy-title {
-        font-size: 28px;
-        line-height: 40px;
-        text-align: center;
     }
 
     .design-philosophy-para {
@@ -217,14 +199,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.philosophy-title{
-    font-family: "Gilda Display", serif;
-    font-size: 38px;
-    font-weight: 100;
-    line-height: 45px;
-    letter-spacing: 5px;
+.philosophy-title {
     color: #824B1E;
-    text-transform: uppercase;
 }
 .philosophy-content-wrapper{
     display: flex;
@@ -257,6 +233,8 @@ body {
 }
 .philosophy-text-title{
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 32px;
     font-weight: 100;
     line-height: 56.25px;
@@ -326,11 +304,6 @@ body {
         align-items: center;
     }
 
-    .philosophy-title{
-        font-size: 34px;
-        line-height: 48px;
-        text-align: center;
-    }
 
     .philosophy-text-title{
         font-size: 32px;
@@ -380,12 +353,6 @@ body {
         flex-direction: column-reverse;
     }
 
-    .philosophy-title{
-        font-size: 26px;
-        line-height: 38px;
-        text-align: center;
-    }
-
     .philosophy-text-content-wrapper{
         width: 100%;
     }
@@ -423,11 +390,6 @@ body {
 
     .philosophy-section{
         padding: 50px 0;
-    }
-
-    .philosophy-title{
-        font-size: 22px;
-        line-height: 32px;
     }
 
     .philosophy-text-title{

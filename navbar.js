@@ -40,3 +40,27 @@ subPanel.addEventListener("mouseleave", (e) => {
     subPanel.classList.remove("open");
   }
 });
+
+
+
+
+const navbar = document.querySelector(".navbar");
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+  let currentScroll =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  // SCROLL DOWN → HIDE NAVBAR
+  if (currentScroll > lastScrollTop && currentScroll > 50) {
+    navbar.style.transform = "translateY(-100%)";
+  }
+
+  // SCROLL UP → SHOW NAVBAR
+  else {
+    navbar.style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

@@ -123,6 +123,8 @@ body {
 
 .blog-title {
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -177,11 +179,6 @@ body {
 }
 
 .recent-post-heading {
-    font-family: "Gilda Display", serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 33.6px;
-    letter-spacing: 2%;
     color: #623916;
     margin-bottom: 2rem;
 }
@@ -402,14 +399,7 @@ body {
 }
 
 .blog-details-heading {
-    font-family: "Gilda Display", serif;
-    font-size: 32px;
-    font-weight: 100;
-    line-height: 56.25px;
-    letter-spacing: 0%;
     color: #8C5120;
-    text-transform: uppercase;
-    text-align: center;
 }
 
 /* =========================
@@ -471,14 +461,8 @@ body {
 ========================= */
 
 .blog-main-title {
-    font-family: "Gilda Display", serif;
-    font-size: 32px;
-    font-weight: 100;
-    line-height: 44px;
-    letter-spacing: 4%;
     color: #8C5120;
     width: 100%;
-    text-transform: uppercase;
     text-align: left;
     margin-bottom: 28px;
 }
@@ -674,6 +658,8 @@ body {
 
 .recent-post-heading {
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 32px;
     font-weight: 400;
     line-height: 33.6px;

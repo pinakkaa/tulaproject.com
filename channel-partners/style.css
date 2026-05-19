@@ -42,13 +42,7 @@
       }
    
       .channel-section h2 {
-        font-family: "Gilda Display", serif;
-        font-size: 32px;
-        font-weight: 200;
-        line-height: 56.25px;
-        letter-spacing: 4%;
         color: #8C5120;
-        text-transform: uppercase;
       }
    
       .channel-section .intro {
@@ -64,13 +58,7 @@
       }
    
       .why-title {
-        font-family: "Gilda Display", serif;
-        font-size: 32px;
-        font-weight: 200;
-        line-height: 56.25px;
-        letter-spacing: 4%;
         color: #8C5120;
-        text-transform: uppercase;
         margin-bottom: 2rem;
       }
    
@@ -124,6 +112,8 @@
         text-align: center;
         letter-spacing: 0.02em;
         font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
       }
    
       /* ════════════════════════════════
@@ -136,12 +126,7 @@
       }
    
       .register-section h2 {
-        font-family: "Gilda Display", serif;
-        font-size: 32px;
-        font-weight: 100;
         color: #8b4513;
-        letter-spacing: 1px;
-        text-transform: uppercase;
         margin-bottom: 28px;
       }
    

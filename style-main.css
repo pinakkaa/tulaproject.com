@@ -1,3 +1,5 @@
+@import url("./headings.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -112,14 +114,8 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.tula-properties-about-title{
-  font-family: "Gilda Display", serif;
-  font-size: 32px;
-  font-weight: 200;
-  line-height: 56.25px;
-  letter-spacing: 4%;
+.tula-properties-about-title {
   color: #8C5120;
-  text-transform: uppercase;
 }
 .tula-properties-about-content-wrapper{
   display: flex;
@@ -162,16 +158,14 @@
     }
 
     .soil-heading h3 {
-      font-family: "Gilda Display", serif;
-      font-size: 40px;
-      font-weight: 400;
       color: #7c522a;
-      letter-spacing: 5px;
       margin-top: 8px;
     }
 
     .soil-heading p {
       font-family: "Gilda Display", serif;
+      font-weight: 400;
+      font-style: normal;
       font-size: 32px;
       letter-spacing: 2px;
       color: #a17249;
@@ -231,16 +225,18 @@
 
     .soil-letter {
       font-family: "Gilda Display", serif;
+      font-weight: 100;
+      font-style: normal;
       font-size: 90px;
       line-height: 1;
       margin-bottom: 10px;
-      font-weight: 100;
     }
 
     .soil-title {
       font-family: "Gilda Display", serif;
-      font-size: 38px;
       font-weight: 400;
+      font-style: normal;
+      font-size: 38px;
       margin-bottom: 16px;
       letter-spacing: 2px;
     }
@@ -350,11 +346,7 @@
 }
 
 .our-project-heading {
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 3px;
   color: #b07442;
-  font-family: "Cormorant Garamond", serif;
 }
 
 /* Wrapper */
@@ -518,9 +510,6 @@
       gap: 40px;
   }
 
-  .our-project-heading {
-      font-size: 44px;
-  }
 }
 
 /* =========================
@@ -575,9 +564,6 @@
       margin-bottom: 50px;
   }
 
-  .our-project-heading {
-      font-size: 38px;
-  }
 
   .project-card {
       padding: 25px;
@@ -623,9 +609,6 @@
 
 @media (max-width: 480px) {
 
-  .our-project-heading {
-      font-size: 30px;
-  }
 
   .project-card {
       padding: 20px;
@@ -670,15 +653,8 @@
     }
     
     .tula-testimonial-heading {
-      font-family: "Gilda Display", serif;
-      font-size: 32px;
-      font-weight: 100;
-      line-height: 56.25px;
       color: #ffffffd4;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       margin-bottom: 40px;
-      text-align: center;
     }
     
     /* Track Area */
@@ -921,14 +897,8 @@
         width: 100%;
         text-align: center;
     }
-    .blogs-title{
-      font-family: "Gilda Display", serif;
-        font-size: 32px;
-        font-weight: 100;
-        line-height: 56.25px;
-        color: #8C5120;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+    .blogs-title {
+      color: #8C5120;
     }
     .blogs-content-wrapper{
         display: flex;
@@ -978,8 +948,9 @@
         align-items: center;
         gap: 3px;
         font-family: "Gilda Display", serif;
-        font-size: 15px;
         font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
         line-height: 100%;
         color: #623916;
     }

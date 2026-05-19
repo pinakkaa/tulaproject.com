@@ -1,3 +1,5 @@
+@import url("./headings.css");
+
 /* ─── NAVBAR ─── */
 /* .navbar {
     position: relative;
@@ -20,14 +22,8 @@
   align-items: center;
  }
  
-.page-title{
-  font-family: "Gilda Display", serif;
-  font-size: 55px;
-  font-weight: 400;
-  line-height: 48.3px;
-  letter-spacing: 8px;
+.page-title {
   color: #F8E8D1;
-  text-transform: uppercase;
 }
 
 
@@ -56,6 +52,7 @@
   );
 
   z-index: 1000;
+  transition: transform 0.35s ease;
 }
 
 /* ─── HAMBURGER ─── */

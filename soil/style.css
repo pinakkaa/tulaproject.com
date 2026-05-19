@@ -52,14 +52,8 @@ body {
     align-items: center;
     gap: 1.6rem;
 }
-.soil-about-title{
-    font-family: "Gilda Display", serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 56.25px;
-    letter-spacing: 4%;
+.soil-about-title {
     color: #8C5120;
-    text-transform: uppercase;
 }
 .soil-about-title-para{
     font-family: "Barlow", sans-serif;
@@ -156,6 +150,8 @@ body {
     font-size: 200px;
     line-height: 1;
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
     font-weight: 100;
     color: #f6e6d2;
     flex-shrink: 0;
@@ -175,6 +171,8 @@ body {
     font-weight: 400;
     margin-bottom: 5px;
     font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .soil-description {

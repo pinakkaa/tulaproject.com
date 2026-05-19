@@ -42,32 +42,36 @@
       }
    
       .channel-section h2 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 28px;
-        font-weight: 500;
-        color: #8b4513;
-        letter-spacing: 0.12em;
+        font-family: "Gilda Display", serif;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 56.25px;
+        letter-spacing: 4%;
+        color: #8C5120;
         text-transform: uppercase;
-        margin-bottom: 18px;
       }
    
       .channel-section .intro {
-        font-size: 13.5px;
-        font-weight: 300;
-        color: #3d2b1a;
-        line-height: 1.85;
-        max-width: 680px;
-        margin: 0 auto 52px;
+        font-family: "Barlow", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 1px;
+        color: #666666e9;
+        text-align: center;
+        padding: 0 7rem;
+        margin-bottom: 5rem;
       }
    
       .why-title {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 22px;
-        font-weight: 400;
-        color: #3d2b1a;
-        letter-spacing: 0.1em;
+        font-family: "Gilda Display", serif;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 56.25px;
+        letter-spacing: 4%;
+        color: #8C5120;
         text-transform: uppercase;
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
       }
    
       /* Cards grid */
@@ -86,8 +90,8 @@
    
       .partner-card {
         background-color: #8b4513;
-        width: 190px;
-        height: 140px;
+        width: 350px;
+        height: 180px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -95,6 +99,10 @@
         justify-content: center;
         gap: 14px;
         padding: 18px 14px;
+      }
+      .partner-icon{
+        height: 60px;
+        width: 60px;
       }
    
       .partner-card svg {
@@ -110,11 +118,12 @@
    
       .partner-card span {
         font-size: 12px;
-        font-weight: 300;
+        font-weight: 100;
         color: #f5e6d0;
-        line-height: 1.5;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.02em;
+        font-family: "Gilda Display", serif;
       }
    
       /* ════════════════════════════════
@@ -127,11 +136,11 @@
       }
    
       .register-section h2 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 26px;
-        font-weight: 400;
+        font-family: "Gilda Display", serif;
+        font-size: 32px;
+        font-weight: 100;
         color: #8b4513;
-        letter-spacing: 0.12em;
+        letter-spacing: 1px;
         text-transform: uppercase;
         margin-bottom: 28px;
       }

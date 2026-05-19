@@ -72,6 +72,15 @@ body {
 }
 .our-journey-para {
   font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  line-height: 26px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.our-journey-para span {
+  font-family: "Barlow", sans-serif;
   font-size: 0.9rem;
   line-height: 26px;
   font-weight: 400;

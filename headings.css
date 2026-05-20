@@ -1,5 +1,4 @@
 @import url("./fonts.css");
-@import url("./body-text.css");
 
 /* Tula heading typography (Figma: Gilda Display 400 / 40px / 56.25px / 0% / uppercase / center) */
 :root {
@@ -14,7 +13,6 @@
 .section-title,
 .section-title-big,
 .tula-properties-about-title,
-.soil-heading > p.soil-philosophy-heading,
 .soil-heading h3,
 .tula-testimonial-heading,
 .blogs-title,

@@ -125,7 +125,13 @@
   padding: 0 6rem;
 }
 .tula-properties-about-content-para{
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 4%;
   color: #666666e9;
+  text-align: justify;
 }
 .tula-properties-about-floating-logo{
   height: 85px;
@@ -156,8 +162,14 @@
       margin-top: 8px;
     }
 
-    .soil-heading > p.soil-philosophy-heading {
+    .soil-heading p {
+      font-family: "Gilda Display", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 32px;
+      letter-spacing: 2px;
       color: #a17249;
+      text-transform: uppercase;
     }
 
     /* Cards Wrapper */
@@ -269,6 +281,10 @@
       .soil-heading h3 {
         font-size: 40px;
         letter-spacing: 5px;
+      }
+
+      .soil-heading p {
+        font-size: 16px;
       }
 
       .soil-letter {
@@ -427,14 +443,39 @@
 }
 
 .project-description {
-  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2%;
   color: #1f1f1fe4;
+  margin-bottom: 30px;
 }
 
 .project-details {
   margin-bottom: 15px;
 }
 
+.project-details p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3%;
+  color: #1F1F1F;
+}
+
+.project-details span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #1F1F1F;
+}
+
+/* Button */
 
 .project-btn {
   display: inline-flex;

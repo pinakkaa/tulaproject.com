@@ -29,7 +29,12 @@ body, html{
 .section-title-big {
     color: #1F1F1F;
 }
-.section-para {
+.section-para{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 3%;
     color: #1F1F1F;
 }
 .page-title {

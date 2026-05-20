@@ -43,7 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 100px;
 }
 .soil-about-section-title-wrapper{
     display: flex;
@@ -124,7 +124,7 @@ body {
 .soil-content {
     width: 60%;
     background: #99581f;
-    padding: 50px 55px;
+    padding: 56px 95px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -150,12 +150,12 @@ body {
     font-size: 200px;
     line-height: 1;
     font-family: "Gilda Display", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 100;
     color: #f6e6d2;
     flex-shrink: 0;
-    padding-top: 2.5rem;
+    padding-top: 4.5rem;
 }
 
 /* =========================
@@ -187,7 +187,7 @@ body {
 }
 
 .soil-points li {
-    line-height: 1.7;
+    line-height: 1.4;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.9);
 }

@@ -66,12 +66,13 @@ body {
 }
 .our-journey-para {
   font-family: "Barlow", sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 26px;
   font-weight: 400;
   color: #666666;
   letter-spacing: 1px;
   text-align: center;
+  max-width: 1120px;
 }
 .our-journey-para span {
   font-family: "Barlow", sans-serif;
@@ -157,7 +158,7 @@ body {
     color: #000;
 }
 .founder-image-wrapper{
-    height: 605px;
+    height: 580px;
     width: 695px;
 }
 .founder-image{

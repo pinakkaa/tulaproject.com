@@ -2,7 +2,7 @@
 
 /* Tula heading typography (Figma: Gilda Display 400 / 40px / 56.25px / 0% / uppercase / center) */
 :root {
-  --heading-font-size: 40px;
+  --heading-font-size: 32px;
   --heading-line-height: 56.25px;
   --heading-letter-spacing: 0;
   --heading-text-transform: uppercase;

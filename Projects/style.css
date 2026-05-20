@@ -2195,3 +2195,427 @@ h2.project-title {
 .text-right{
   text-align: right;
 }
+
+
+
+/* =========================================================
+   PROFESSIONAL RESPONSIVE SYSTEM
+========================================================= */
+
+/* =========================
+   LARGE LAPTOP
+========================= */
+@media screen and (max-width: 1200px) {
+
+  .main-container{
+    width: 92%;
+    padding: 0 20px;
+  }
+
+  section{
+    overflow: hidden;
+  }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media screen and (max-width: 992px) {
+
+  /* Global */
+  h1, h2 {
+    line-height: 1.3 !important;
+  }
+
+  p {
+    line-height: 1.8 !important;
+  }
+
+  .main-container{
+    width: 94%;
+    padding: 0 18px;
+  }
+
+  /* Hero */
+  .hero-section{
+    height: 75vh;
+    background-position: center;
+  }
+
+  /* About */
+  .about-section{
+    padding: 90px 0;
+  }
+
+  .about-section-wrapper{
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+  }
+
+  .about-image-wrapper,
+  .about-section-content-wrapper{
+    width: 100%;
+  }
+
+  .about-logo{
+    width: 90px;
+    height: 90px;
+    display: none;
+  }
+
+  .about-points-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-points{
+    width: calc(50% - 10px);
+  }
+
+  /* Resort */
+  .resort-container{
+    grid-template-columns: 1fr;
+  }
+
+  .resort-content{
+    max-width: 100%;
+    padding: 60px 40px;
+  }
+
+  .resort-gallery{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  /* Projects */
+  .project-card-wrapper,
+  .reverse{
+    flex-direction: column;
+  }
+
+  .project-card-image-wrapper,
+  .project-card-content-wrapper{
+    width: 100%;
+  }
+
+  .project-card-content-wrapper{
+    padding: 50px 35px;
+  }
+
+  /* Nature */
+  .nature-top-block,
+  .nature-bottom-block{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .nature-bottom-block{
+    margin-top: 6rem;
+  }
+
+  .nature-top-bottom-text{
+    position: static;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .nature-fruit-grid{
+    margin-bottom: 0;
+  }
+
+  /* Outdoor */
+  .outdoor-container{
+    grid-template-columns: 1fr;
+  }
+
+  .outdoor-content{
+    max-width: 100%;
+    padding: 60px 40px;
+  }
+
+  .outdoor-gallery{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  /* Sports */
+  .sports-area-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* Location */
+  .location-advantages-content{
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  /* Footer */
+  .footer-main{
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  /* Global */
+  .main-container{
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  h2{
+    font-size: 30px !important;
+    line-height: 1.3 !important;
+  }
+
+  p{
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+  }
+
+  section{
+    overflow: hidden;
+  }
+
+  /* Navbar */
+  .navbar{
+    padding: 14px 18px;
+  }
+
+  .logo img{
+    width: 95px;
+    height: auto;
+  }
+
+  .book-btn{
+    font-size: 11px;
+    padding: 10px 16px;
+  }
+
+  /* Hero */
+  .hero-section{
+    height: 65vh;
+  }
+
+  /* About */
+  .about-section{
+    padding: 70px 0;
+  }
+
+  .about-title-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-points-wrapper{
+    flex-direction: column;
+  }
+
+  .about-points{
+    width: 100%;
+  }
+
+  /* Resort */
+  .resort-content{
+    padding: 45px 24px;
+  }
+
+  .resort-gallery{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* Projects */
+  .project-card-image-wrapper{
+    height: 250px;
+  }
+
+  .project-card-content-wrapper{
+    padding: 30px 22px;
+  }
+
+  .project-card-title{
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  /* Nature */
+  .nature-lifestyle-section{
+    padding: 70px 0;
+  }
+
+  .nature-fruit-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .nature-main-title,
+  .nature-bottom-content h2{
+    text-align: center !important;
+  }
+
+  .nature-bottom-content h4,
+  .nature-bottom-content p{
+    text-align: center;
+  }
+
+  .nature-frame-left,
+  .nature-frame-right{
+    padding: 0;
+  }
+
+  .nature-frame-left .nature-frame-shape,
+  .nature-frame-right .nature-frame-shape{
+    display: none;
+  }
+
+  /* Outdoor */
+  .outdoor-content{
+    padding: 45px 24px;
+  }
+
+  .outdoor-gallery{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* Sports */
+  .sports-area-section{
+    padding: 70px 16px;
+  }
+
+  .sports-card-layout{
+    grid-template-columns: 1fr 50px;
+  }
+
+  .sports-img-1,
+  .sports-img-2,
+  .sports-img-4,
+  .sports-img-5{
+    height: 170px;
+  }
+
+  /* Location */
+  .location-advantages-section{
+    padding: 70px 0;
+  }
+
+  .location-advantages-container{
+    padding: 0 16px;
+  }
+
+  .location-item{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .location-time{
+    margin-top: 6px;
+  }
+
+  iframe{
+    height: 320px;
+  }
+
+  /* Gallery */
+  .luxora-gallery-btn{
+    display: none;
+  }
+
+  /* Footer */
+  .footer-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-legal{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-copyright{
+    text-align: center;
+    padding: 0 20px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media screen and (max-width: 480px) {
+
+  h2{
+    font-size: 24px !important;
+  }
+
+  p{
+    font-size: 14px !important;
+  }
+
+  .hero-section{
+    height: 55vh;
+  }
+
+  .logo img{
+    width: 80px;
+  }
+
+  .book-btn{
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  /* Resort */
+  .resort-gallery{
+    grid-template-columns: 1fr;
+  }
+
+  /* Outdoor */
+  .outdoor-gallery{
+    grid-template-columns: 1fr;
+  }
+
+  /* Nature */
+  .nature-fruit-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .fruit-item span{
+    font-size: 12px;
+  }
+
+  /* Sports */
+  .sports-card-layout{
+    grid-template-columns: 1fr 42px;
+  }
+
+  .sports-strap span{
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  .sports-img-1,
+  .sports-img-2,
+  .sports-img-4,
+  .sports-img-5{
+    height: 140px;
+  }
+
+  .sports-img-3,
+  .sports-img-6{
+    height: 120px;
+  }
+
+  iframe{
+    height: 260px;
+  }
+
+}

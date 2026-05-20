@@ -950,3 +950,371 @@ body {
       height: 70vh;
     }
   }
+
+
+
+
+  /* =========================================================
+   FINAL PROFESSIONAL RESPONSIVE SYSTEM
+========================================================= */
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+@media screen and (max-width: 1200px) {
+
+    .main-container{
+      width: 92%;
+      padding: 0 20px;
+    }
+  
+    .eco-urbanity-content-wrapper{
+      padding: 0;
+    }
+  
+    .eco-urbanity-content-flex-wrrapper{
+      gap: 4rem;
+    }
+  
+    .pillar-wrapper{
+      min-height: auto;
+    }
+  
+  }
+  
+  
+  /* =========================
+     TABLET
+  ========================= */
+  @media screen and (max-width: 992px) {
+  
+    /* Global */
+    h1,h2,h3{
+      line-height: 1.3 !important;
+    }
+  
+    p{
+      line-height: 1.8 !important;
+    }
+  
+    .main-container{
+      width: 94%;
+      padding: 0 18px;
+    }
+  
+    /* Hero */
+    .hero-section{
+      height: 72vh;
+      background-position: center;
+    }
+  
+    /* About */
+    .eco-about-section{
+      padding: 90px 0;
+    }
+  
+    .eco-para{
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    /* Content */
+    .eco-urbanity-content-section{
+      padding: 90px 0;
+    }
+  
+    .eco-urbanity-content-flex-wrrapper,
+    .row-reverse{
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .eco-urbanity-text-wrapper{
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .eco-urbanity-title,
+    .eco-urbanity-title-brown{
+      font-size: 30px;
+      line-height: 1.4;
+    }
+  
+    .eco-urbanity-para,
+    .eco-urbanity-para-brown{
+      max-width: 100%;
+      font-size: 16px;
+    }
+  
+    .eco-urbanity-image-wrapper,
+    .eco-urbanity-image-wrapper-brown{
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+  
+    .eco-urbanity-images{
+      object-fit: cover;
+    }
+  
+    /* Pillar */
+    .pillar-section{
+      padding: 80px 0;
+    }
+  
+    .pillar-wrapper{
+      flex-direction: column;
+      gap: 50px;
+      padding: 100px 30px 70px;
+    }
+  
+    .pillar-card{
+      position: relative;
+      width: 100%;
+      max-width: 520px;
+    }
+  
+    .pillar-heading{
+      font-size: 34px;
+    }
+  
+    .pillar-logo-shape{
+      width: 180px;
+      height: 180px;
+    }
+  
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  @media screen and (max-width: 768px) {
+  
+    /* Global */
+    .main-container{
+      width: 100%;
+      padding: 0 16px;
+    }
+  
+    h2{
+      font-size: 28px !important;
+      line-height: 1.3 !important;
+    }
+  
+    p{
+      font-size: 15px !important;
+      line-height: 1.8 !important;
+    }
+  
+    section{
+      overflow: hidden;
+    }
+  
+    /* Navbar */
+    .navbar{
+      padding: 14px 18px;
+    }
+  
+    .logo img{
+      width: 95px;
+      height: auto;
+    }
+  
+    .book-btn{
+      font-size: 11px;
+      padding: 10px 16px;
+    }
+  
+    /* Hero */
+    .hero-section{
+      background-image: url("./Images/Eco-Urb-Mobile.png");
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    /* About */
+    .eco-about-section{
+      padding: 70px 0;
+    }
+  
+    .eco-para{
+      font-size: 14px;
+      line-height: 26px;
+      text-align: justify;
+    }
+  
+    /* Content */
+    .eco-urbanity-content-section{
+      padding: 70px 0;
+    }
+  
+    .eco-urbanity-content-wrapper{
+      gap: 4rem;
+    }
+  
+    .eco-urbanity-content-flex-wrrapper{
+      gap: 2rem;
+    }
+  
+    .eco-urbanity-title,
+    .eco-urbanity-title-brown{
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  
+    .eco-urbanity-para,
+    .eco-urbanity-para-brown{
+      font-size: 14px;
+      line-height: 25px;
+    }
+  
+    .eco-urbanity-image-wrapper,
+    .eco-urbanity-image-wrapper-brown{
+      aspect-ratio: 4/3;
+    }
+  
+    /* Pillar */
+    .pillar-section{
+      padding: 70px 0;
+    }
+  
+    .pillar-wrapper{
+      padding: 80px 18px 50px;
+      gap: 36px;
+    }
+  
+    .pillar-heading-wrapper{
+      gap: 12px;
+    }
+  
+    .pillar-heading{
+      font-size: 26px;
+    }
+  
+    .pillar-line{
+      width: 28px;
+    }
+  
+    .pillar-logo-shape{
+      width: 140px;
+      height: 140px;
+    }
+  
+    .pillar-card{
+      text-align: left;
+    }
+  
+    .pillar-icon{
+      height: 70px;
+      margin-bottom: 10px;
+    }
+  
+    .pillar-title{
+      font-size: 22px;
+    }
+  
+    .pillar-description{
+      font-size: 13px;
+      line-height: 1.8;
+    }
+  
+    /* Footer */
+    .footer-main{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 50px 20px;
+    }
+  
+    .footer-legal{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .footer-copyright{
+      text-align: center;
+      padding: 0 20px;
+    }
+  
+  }
+  
+  
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+  @media screen and (max-width: 480px) {
+  
+    h2{
+      font-size: 22px !important;
+    }
+  
+    p{
+      font-size: 14px !important;
+    }
+  
+    .hero-section{
+      height: 48vh;
+    }
+  
+    .logo img{
+      width: 80px;
+    }
+  
+    .book-btn{
+      padding: 8px 12px;
+      font-size: 10px;
+    }
+  
+    .eco-about-section,
+    .eco-urbanity-content-section{
+      padding: 55px 0;
+    }
+  
+    .eco-urbanity-title,
+    .eco-urbanity-title-brown{
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  
+    .eco-urbanity-para,
+    .eco-urbanity-para-brown{
+      font-size: 13px;
+      line-height: 23px;
+    }
+  
+    .pillar-wrapper{
+      padding: 70px 12px 45px;
+    }
+  
+    .pillar-heading{
+      font-size: 22px;
+    }
+  
+    .pillar-logo-shape{
+      width: 110px;
+      height: 110px;
+    }
+  
+    .pillar-icon{
+      height: 55px;
+    }
+  
+    .pillar-title{
+      font-size: 20px;
+    }
+  
+    .pillar-description{
+      font-size: 12px;
+      line-height: 1.7;
+    }
+  
+    .footer-main{
+      padding: 40px 16px;
+    }
+  
+  }

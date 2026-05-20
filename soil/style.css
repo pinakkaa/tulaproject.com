@@ -16,7 +16,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -136,12 +136,18 @@ body {
 .soil-card .soil-content {
     border-top-left-radius: 130px;
 }
+.soil-card .soil-image-wrapper {
+    border-bottom-right-radius: 130px;
+}
 
 .reverse-card .soil-content {
     border-top-right-radius: 130px;
     border-top-left-radius: 0;
 }
-
+.reverse-card .soil-image-wrapper{
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 0px;
+}
 /* =========================
    LETTER
 ========================= */
@@ -176,8 +182,8 @@ body {
 }
 
 .soil-description {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.733);
     margin-bottom: 0.8rem;
 }

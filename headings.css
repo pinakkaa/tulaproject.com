@@ -3,7 +3,7 @@
 /* Tula heading typography (Figma: Gilda Display 400 / 40px / 56.25px / 0% / uppercase / center) */
 :root {
   --heading-font-size: 32px;
-  --heading-line-height: 56.25px;
+  --heading-line-height: 45px;
   --heading-letter-spacing: 0;
   --heading-text-transform: uppercase;
 }
@@ -54,14 +54,14 @@ h2.project-title {
 
 @media (max-width: 768px) {
   :root {
-    --heading-font-size: 32px;
-    --heading-line-height: 45px;
+    --heading-font-size: 28px;
+    --heading-line-height: 40px;
   }
 }
 
 @media (max-width: 480px) {
   :root {
-    --heading-font-size: 28px;
-    --heading-line-height: 40px;
+    --heading-font-size: 25px;
+    --heading-line-height: 35px;
   }
 }

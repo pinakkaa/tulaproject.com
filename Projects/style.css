@@ -16,7 +16,7 @@ body {
 
 .main-container{
     width: 100%;
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -43,10 +43,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding: 1rem 3rem;
 }
 .about-image-wrapper{
     width: 636px;
-    height: 485px;
+    height: 415px;
 }
 .about-image{
     height: 100%;
@@ -83,6 +84,7 @@ body {
 }
 .about-title {
   color: #8C5120;
+  text-align: left !important;
 }
 .about-logo{
   width: 120px;
@@ -94,16 +96,16 @@ body {
 }
 .about-content{
   font-family: "Barlow", sans-serif;
-  font-size: 17px;
+  font-size: 13.5px;
   font-weight: 400;
-  line-height: 26.25px;
-  letter-spacing: 3%;
-  color: #666666;
+  line-height: 24px;
+  color: #666666d6;
 }
 .about-points-wrapper{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
   gap: 0.8rem;
 }
 .about-points{
@@ -113,7 +115,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 4px;
-  padding: 15px 53px;
+  padding: 10px 43px;
   background-color: #8C5120;
   border: 1px solid #EEEEEE;
 }
@@ -121,8 +123,8 @@ body {
   font-family: "Gilda Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 23px;
-  font-weight: 700;
+  font-size: 18px !important;
+  font-weight: 500;
   line-height: 14.95px;
   color: #ffffff;
 }
@@ -315,7 +317,7 @@ body {
 .resort-container {
   display: grid;
   grid-template-columns: 40% 60%;
-  min-height: 500px;
+  min-height: 400px;
   align-items: stretch;
 }
 
@@ -331,16 +333,17 @@ body {
 }
 
 .resort-content h2 {
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   color: #F8E7D2;
+  text-align: left !important;
 }
 
 .resort-content p {
   font-family: "Barlow", sans-serif;
-  font-size: 17px;
-  line-height: 26.25px;
-  max-width: 482px;
-  color: #F8E7D2;
+  font-size: 12.5px;
+  line-height: 20px;
+  max-width: 400px;
+  color: #f8e7d295;
   margin-bottom: 25px;
 }
 
@@ -355,10 +358,10 @@ body {
   font-family: "Barlow", sans-serif;
   position: relative;
   padding-left: 18px;
-  margin-bottom: 14px;
-  font-size: 1rem;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
   color: #F8E8D3;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.9px;
 }
 
 .resort-list li::before {
@@ -385,7 +388,7 @@ body {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  min-height: 240px;
+  min-height: 200px;
 }
 
 .gallery-item img {
@@ -515,7 +518,7 @@ body {
 
 .project-sections{
   width: 100%;
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
 }
 .project-section-wrapper{
@@ -543,7 +546,7 @@ h2.project-title {
 .project-card-wrapper{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 0;
   width: 100%;
 }
@@ -552,7 +555,7 @@ h2.project-title {
 }
 .project-card-image-wrapper{
   width: 50%;
-  height: 450px;
+  height: 350px;
   max-height: 450px;
 }
 .project-card-image{
@@ -562,27 +565,28 @@ h2.project-title {
 }
 .project-card-content-wrapper{
   width: 50%;
-  height: 450px;
+  /* height: 450px; */
   max-height: 450px;
-  padding: 109px 0 109px 86px;
+  padding: 109px 0 109px 56px;
 }
 .project-card-title{
   font-family: "Gilda Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 56.25px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 56px;
   letter-spacing: 14%;
   text-transform: uppercase;
   color: #8C5120;
+  max-width: 550px;
 }
 .project-card-para{
   font-family: "Barlow", sans-serif;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 26.25px;
-  max-width: 650px;
+  line-height: 22px;
+  max-width: 550px;
   color: #8C5120;
 }
 
@@ -758,21 +762,23 @@ h2.project-title {
 =========================== */
 .outdoor-content {
   color: #8C5120;
-  padding: 70px 60px;
+  padding: 70px 0 70px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 500px;
 }
 
 .outdoor-content h2 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #8C5120;
+  text-align: left !important;
 }
 
 .outdoor-content p {
   font-family: "Barlow", sans-serif;
-  font-size: 17px;
-  line-height: 26.25px;
+  font-size: 14px;
+  line-height: 24px;
   max-width: 482px;
   color: #666666;
   margin-bottom: 25px;
@@ -790,7 +796,7 @@ h2.project-title {
   position: relative;
   padding-left: 18px;
   margin-bottom: 14px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666666;
   letter-spacing: 0.4px;
 }
@@ -819,7 +825,7 @@ h2.project-title {
 .gallery-item {
   position: relative;
   overflow: hidden;
-  min-height: 240px;
+  min-height: 200px;
 }
 
 .gallery-item img {
@@ -957,7 +963,7 @@ h2.project-title {
 }
 
 .sports-area-container {
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -971,15 +977,16 @@ h2.project-title {
 
 .sports-area-header h2 {
   color: #8C5120;
+  text-align: center !important;
 }
 
 .sports-area-header p {
   font-family: "Barlow", sans-serif;
   margin: 0 auto;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26.25px;
-  color: #666666;
+  color: #666666c5;
 }
 
 /* ===========================
@@ -1257,10 +1264,11 @@ h2.project-title {
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
   gap: 70px;
+  position: relative;
 }
 
 .nature-bottom-block {
-  margin-top: 2.5rem;
+  margin-top: 12.5rem;
   grid-template-columns: 0.9fr 1.1fr;
 }
 
@@ -1331,16 +1339,17 @@ h2.project-title {
 =========================== */
 .nature-top-content {
   width: 100%;
+  height: 100%;
 }
 
 .nature-main-title {
-  font-size: clamp(2rem, 2.2rem, 2.9rem);
   font-weight: 500;
   letter-spacing: 2px;
   color: #a66a3d;
   margin-bottom: 34px;
   text-transform: uppercase;
   line-height: 1.2;
+  font-size: 28px !important;
 }
 
 /* ===========================
@@ -1349,8 +1358,8 @@ h2.project-title {
 .nature-fruit-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px 34px;
-  margin-bottom: 34px;
+  gap: 6px 14px;
+  margin-bottom: -13rem;
 }
 
 .fruit-item {
@@ -1378,15 +1387,17 @@ h2.project-title {
    TOP BOTTOM TEXT
 =========================== */
 .nature-top-bottom-text {
+  position: absolute;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
-  /* padding-top: 8rem; */
+  top: 27.5rem;
+  left: 9.5rem;
 }
 
 .nature-top-bottom-text h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #9b6236;
   font-weight: 600;
   line-height: 1.3;
@@ -1395,7 +1406,7 @@ h2.project-title {
 }
 
 .nature-dash {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #9b6236;
   line-height: 1;
   margin-top: 2px;
@@ -1404,7 +1415,7 @@ h2.project-title {
 .nature-top-bottom-text p {
   flex: 1;
   min-width: 280px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.9;
   color: #a39b94;
   margin: 0;
@@ -1419,21 +1430,26 @@ h2.project-title {
 
 .nature-bottom-content h2 {
   color: #a66a3d;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-align: right !important;
 }
 
 .nature-bottom-content h4 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #9b6236;
   font-weight: 600;
   margin-bottom: 24px;
 }
 
 .nature-bottom-content p {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 1px;
   color: #a39b94;
-  max-width: 470px;
+  /* max-width: 470px; */
 }
 
 /* ===========================
@@ -1679,6 +1695,7 @@ h2.project-title {
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
   gap: 80px;
+  padding: 0 5rem;
 }
 
 /* ===========================
@@ -1709,11 +1726,11 @@ h2.project-title {
 
 .location-top-note {
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #a86a34;
-  margin-bottom: 22px;
-  padding-bottom: 14px;
+  /* margin-bottom: 22px; */
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(168, 106, 52, 0.25);
 }
 
@@ -1741,7 +1758,7 @@ h2.project-title {
 
 .location-place {
   font-family: "Barlow", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #a86a34;
   line-height: 1.6;
@@ -1921,6 +1938,7 @@ h2.project-title {
 }
 .masterplan-title {
   color: #8C5120;
+  text-align: center;
 }
 .masterplan-contetn-wrapper{
   width: 100%;
@@ -2170,4 +2188,10 @@ h2.project-title {
   .item3, .item4, .item5, .item6{
     display: none;
   }
+}
+
+
+
+.text-right{
+  text-align: right;
 }

@@ -1,0 +1,64 @@
+/* Figma body copy: Barlow 400 / Regular / 22px / line 31.3px / letter-spacing 4% / justify */
+/* leading-trim: none — no widely supported CSS equivalent; omitted */
+
+:root {
+  --body-font-family: "Barlow", sans-serif;
+  --body-font-size: 22px;
+  --body-font-weight: 400;
+  --body-line-height: 31.3px;
+  /* 4% tracking (Figma) ≈ 0.04em relative to font size */
+  --body-letter-spacing: 0.04em;
+  --body-text-align: justify;
+}
+
+main {
+  font-family: var(--body-font-family);
+}
+
+main p:not(.tula-properties-about-subtitle):not(.tula-testimonial-text):not(.blogs-para):not(.why-choose-us-card-para):not(.soil-description):not(.founder-sub-title):not(.info-subtitle):not(.soil-philosophy-heading),
+.section-para,
+main li.privacy-policy-para,
+.disclaimer-section-para {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  font-style: normal;
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+  text-align: var(--body-text-align);
+  vertical-align: middle;
+}
+
+/* Project card stat lines — not long-form body copy */
+main .project-details p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3%;
+  color: #1f1f1f;
+  text-align: start;
+}
+
+main .project-details span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #1f1f1f;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --body-font-size: 18px;
+    --body-line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --body-font-size: 16px;
+    --body-line-height: 24px;
+  }
+}

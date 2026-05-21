@@ -70,7 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
 }
 .row-reverse{
     flex-direction: row-reverse;
@@ -80,13 +80,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 15px;
+    width: 50%;
 }
 .eco-urbanity-title{
     font-family: "Gilda Display", serif;
-  font-weight: 400;
-  font-style: normal;
-    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
     font-weight: 100;
     line-height: 43px;
     letter-spacing: 4%;
@@ -98,9 +99,9 @@ body {
 }
 .eco-urbanity-title-brown{
     font-family: "Gilda Display", serif;
-  font-weight: 400;
-  font-style: normal;
-    font-size:28px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
     font-weight: 100;
     line-height: 43px;
     letter-spacing: 4%;
@@ -112,9 +113,9 @@ body {
 }
 .eco-urbanity-para{
     font-family: "Barlow", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 24px;
     color: #f9e8d2ca;
     letter-spacing: 1px;
     max-width: 665px;
@@ -122,12 +123,12 @@ body {
 }
 .eco-urbanity-para-brown{
     font-family: "Barlow", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 25px;
     color: #854D1F;
     max-width: 665px;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-align: justify;
 }
 .eco-urbanity-image-wrapper{

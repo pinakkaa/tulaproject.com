@@ -152,7 +152,7 @@ body {
    LETTER
 ========================= */
 
-.soil-letter {
+/* .soil-letter {
     font-size: 200px;
     line-height: 1;
     font-family: "Gilda Display", serif;
@@ -162,8 +162,24 @@ body {
     color: #f6e6d2;
     flex-shrink: 0;
     padding-top: 4.5rem;
+} */
+.soil-letter {
+    font-size: 136px;
+    line-height: 1;
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 100;
+    color: #f6e6d2;
+    flex-shrink: 0;
+    /* padding-top: 4.5rem; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+    text-align: end;
+    margin-top: 0rem;
 }
-
 /* =========================
    TEXT CONTENT
 ========================= */

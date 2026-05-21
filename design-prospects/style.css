@@ -241,6 +241,7 @@ body {
     letter-spacing: 9%;
     color: #824B1E;
     text-transform: uppercase;
+    text-align: center;
 }
 .philosophy-text-para{    
     font-family: "Barlow", sans-serif;
@@ -251,6 +252,7 @@ body {
     max-width: 1000px;
     text-align: right;
     letter-spacing: 1px;
+    text-align: center;
 }
 .text-aln-left{
     text-align: left !important;

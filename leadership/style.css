@@ -22,13 +22,214 @@ body {
 
 /* Hero Section  */
 
-.hero-section {
+/* .hero-section {
   background-image: url(./Images/Leadership-Mob.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 95vh;
+} */
+
+/* =========================================================
+   LEADERSHIP HERO SLIDER
+========================================================= */
+
+.hero-section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-hero-slider{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.leadership-hero-slide{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+  opacity 1.2s ease,
+  transform 7s ease;
+  transform: scale(1.08);
+}
+
+.leadership-hero-slide.active-slide{
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  transform: scale(1);
+}
+
+.leadership-hero-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+
+.leadership-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background:
+  linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.15),
+      rgba(0,0,0,0.25),
+      rgba(0,0,0,0.35)
+  );
+  z-index: 3;
+}
+
+/* Arrows */
+
+.leadership-hero-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.35s ease;
+}
+
+.leadership-hero-arrow:hover{
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.leadership-hero-prev{
+  left: 35px;
+}
+
+.leadership-hero-next{
+  right: 35px;
+}
+
+/* Dots */
+
+.leadership-hero-dots{
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 5;
+}
+
+.leadership-hero-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.leadership-hero-dot.active-dot{
+  width: 34px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+/* =========================================================
+ TABLET
+========================================================= */
+
+@media screen and (max-width: 992px){
+
+  .hero-section{
+      height: 75vh;
+  }
+
+  .leadership-hero-arrow{
+      width: 46px;
+      height: 46px;
+      font-size: 20px;
+  }
+
+  .leadership-hero-prev{
+      left: 22px;
+  }
+
+  .leadership-hero-next{
+      right: 22px;
+  }
+
+}
+
+/* =========================================================
+ MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px){
+
+  .hero-section{
+      height: 68vh;
+  }
+
+  .leadership-hero-arrow{
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+  }
+
+  .leadership-hero-prev{
+      left: 14px;
+  }
+
+  .leadership-hero-next{
+      right: 14px;
+  }
+
+  .leadership-hero-dots{
+      bottom: 24px;
+      gap: 10px;
+  }
+
+}
+
+/* =========================================================
+ SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px){
+
+  .hero-section{
+      height: 58vh;
+  }
+
+  .leadership-hero-arrow{
+      width: 34px;
+      height: 34px;
+      font-size: 16px;
+  }
+
+  .leadership-hero-dot{
+      width: 8px;
+      height: 8px;
+  }
+
+  .leadership-hero-dot.active-dot{
+      width: 24px;
+  }
+
 }
 
 /* Our Journey  */

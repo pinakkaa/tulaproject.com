@@ -1685,6 +1685,7 @@ h2.project-title {
   color: #a86a34;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  text-align: center !important;
 }
 
 /* ===========================
@@ -1938,7 +1939,7 @@ h2.project-title {
 }
 .masterplan-title {
   color: #8C5120;
-  text-align: center;
+  text-align: center !important;
 }
 .masterplan-contetn-wrapper{
   width: 100%;
@@ -1980,6 +1981,7 @@ h2.project-title {
   color: #9b6b43;
   text-transform: uppercase;
   font-family: serif;
+  text-align: center !important;
 }
 
 /* Slider */

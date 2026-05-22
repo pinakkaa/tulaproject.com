@@ -235,13 +235,13 @@ body {
     font-family: "Gilda Display", serif;
   font-weight: 400;
   font-style: normal;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 100;
     line-height: 56.25px;
     letter-spacing: 9%;
     color: #824B1E;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 .philosophy-text-para{    
     font-family: "Barlow", sans-serif;
@@ -252,7 +252,7 @@ body {
     max-width: 1000px;
     text-align: right;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: justify;
 }
 .text-aln-left{
     text-align: left !important;

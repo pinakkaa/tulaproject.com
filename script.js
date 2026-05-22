@@ -1,45 +1,48 @@
+// Legacy menu markup (demo pages only) — home uses navbar.js
 const menuToggle = document.getElementById("menuToggle");
 const sideMenu = document.getElementById("sideMenu");
 const overlay = document.getElementById("overlay");
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  sideMenu.classList.toggle("active");
-  overlay.classList.toggle("active");
+if (menuToggle && sideMenu && overlay) {
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    sideMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
 
-  if (sideMenu.classList.contains("active")) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-});
+    if (sideMenu.classList.contains("active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  });
 
-overlay.addEventListener("click", () => {
-  menuToggle.classList.remove("active");
-  sideMenu.classList.remove("active");
-  overlay.classList.remove("active");
-  document.body.style.overflow = "auto";
-});
-
-const navLinks = document.querySelectorAll(".menu-links a");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  overlay.addEventListener("click", () => {
     menuToggle.classList.remove("active");
     sideMenu.classList.remove("active");
     overlay.classList.remove("active");
     document.body.style.overflow = "auto";
   });
-});
 
-// Our Projects
+  const navLinks = document.querySelectorAll(".menu-links a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("active");
+      sideMenu.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+  });
+}
 
 const detailsBtn = document.querySelector(".details-btn");
 
-detailsBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  alert("More Details button clicked!");
-});
+if (detailsBtn) {
+  detailsBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    alert("More Details button clicked!");
+  });
+}
 
 // Gallery Section
 
@@ -64,14 +67,15 @@ let currentIndex = 0;
 const sliderTrack = document.getElementById("sliderTrack");
 const buttons = document.querySelectorAll(".gallery-btn");
 
-function renderSlider() {
-  const images = galleries[currentGallery];
-  const total = images.length;
+if (sliderTrack) {
+  function renderSlider() {
+    const images = galleries[currentGallery];
+    const total = images.length;
 
-  const prevIndex = (currentIndex - 1 + total) % total;
-  const nextIndex = (currentIndex + 1) % total;
+    const prevIndex = (currentIndex - 1 + total) % total;
+    const nextIndex = (currentIndex + 1) % total;
 
-  sliderTrack.innerHTML = `
+    sliderTrack.innerHTML = `
     <div class="slide left">
       <img src="${images[prevIndex]}?w=1200&q=80" alt="Previous Image">
     </div>
@@ -82,31 +86,20 @@ function renderSlider() {
       <img src="${images[nextIndex]}?w=1200&q=80" alt="Next Image">
     </div>
   `;
-}
+  }
 
-function nextSlide() {
-  const total = galleries[currentGallery].length;
-  currentIndex = (currentIndex + 1) % total;
-  renderSlider();
-}
+  function switchGallery(index) {
+    currentGallery = index;
+    currentIndex = 0;
 
-function prevSlide() {
-  const total = galleries[currentGallery].length;
-  currentIndex = (currentIndex - 1 + total) % total;
-  renderSlider();
-}
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    buttons[index].classList.add("active");
 
-function switchGallery(index) {
-  currentGallery = index;
-  currentIndex = 0;
-
-  buttons.forEach((btn) => btn.classList.remove("active"));
-  buttons[index].classList.add("active");
+    renderSlider();
+  }
 
   renderSlider();
 }
-
-renderSlider();
 
 // Testimonial Section
 
@@ -117,10 +110,15 @@ renderSlider();
 function initializeTulaTestimonialSliderUnique() {
   const sliderShell = document.getElementById("tulaTestimonialSliderShell");
   const sliderTrack = document.getElementById("tulaTestimonialTrack");
-  const slides = Array.from(sliderTrack.children);
   const dotsWrapper = document.getElementById("tulaTestimonialDots");
   const prevArrow = document.querySelector(".tula-testimonial-arrow-left");
   const nextArrow = document.querySelector(".tula-testimonial-arrow-right");
+
+  if (!sliderShell || !sliderTrack || !dotsWrapper || !prevArrow || !nextArrow) {
+    return;
+  }
+
+  const slides = Array.from(sliderTrack.children);
 
   let tulaCurrentIndex = 0;
   let tulaSlidesPerView = getTulaSlidesPerView();

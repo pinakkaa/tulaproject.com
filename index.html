@@ -183,7 +183,7 @@
                 class="why-choose-us-section-icons"
               />
               <div class="why-choose-us-card-content-wrapper">
-                <h3 class="why-choose-us-card-title">OUR QUALIITY</h3>
+                <h3 class="why-choose-us-card-title">OUR QUALITY</h3>
                 <p class="why-choose-us-card-para">
                   We create spaces that are built to last, designed to inspire,
                   and crafted to elevate everyday living.
@@ -1034,6 +1034,68 @@
         </form>
       </div>
     </div>
+
+    <script>
+      // ====================================
+// NAVBAR SCROLL — HOME PAGE FIX
+// ====================================
+
+(function () {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+
+  const s = document.createElement("style");
+  s.textContent = `
+    .navbar {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      z-index: 99999 !important;
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1) !important;
+      will-change: transform !important;
+    }
+    .navbar.nav--hidden {
+      transform: translateY(-110%) !important;
+    }
+  `;
+  document.head.appendChild(s);
+
+  let lastY = 0;
+  let hidden = false;
+
+  function handleScroll() {
+    // Read from body — this is where the scroll actually lives
+    const currentY = document.body.scrollTop;
+
+    if (currentY <= 60) {
+      navbar.classList.remove("nav--hidden");
+      hidden = false;
+      lastY = currentY;
+      return;
+    }
+
+    const diff = currentY - lastY;
+
+    if (diff > 4 && !hidden) {
+      navbar.classList.add("nav--hidden");
+      hidden = true;
+    } else if (diff < -2 && hidden) {
+      navbar.classList.remove("nav--hidden");
+      hidden = false;
+    }
+
+    lastY = currentY;
+  }
+
+  // Listen directly on body — where the scroll is actually happening
+  document.body.addEventListener("scroll", handleScroll, { passive: true });
+
+  // Also keep window listener as fallback
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+})();
+    </script>
 
     <script src="./navbar.js"></script>
     <script src="./script.js"></script>

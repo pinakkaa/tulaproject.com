@@ -359,3 +359,38 @@ if (window.innerWidth <= 992) {
   });
 
 }
+
+
+const navbar = document.querySelector(".navbar");
+
+let lastScrollTop = 0;
+const scrollThreshold = 10;
+
+window.addEventListener("scroll", () => {
+
+    const currentScroll =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll <= 20) {
+        navbar.style.transform = "translateY(0)";
+        return;
+    }
+
+    if (
+        currentScroll > lastScrollTop &&
+        currentScroll - lastScrollTop > scrollThreshold
+    ) {
+
+        navbar.style.transform = "translateY(-100%)";
+
+    } else if (
+        lastScrollTop - currentScroll > scrollThreshold
+    ) {
+
+        navbar.style.transform = "translateY(0)";
+
+    }
+
+    lastScrollTop = currentScroll;
+
+});

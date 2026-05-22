@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100..900;1,100..900&family=Barlow+Semi+Condensed:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+    
   </head>
 
   <body>
@@ -32,7 +33,7 @@
           <img src="./Images/logo.png" alt="" height="70" width="120" />
         </a>
 
-        <a href="#" class="book-btn project-enquiry-btn">BOOK NOW</a>
+        <a href="#" class="book-btn project-enquiry-btn">ENQUIRE NOW</a>
       </nav>
 
       <!-- ─── OVERLAY ─── -->
@@ -971,5 +972,41 @@
     <script src="./navbar.js"></script>
     <script src="./script.js"></script>
     <script src="./footer-email.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+            const navbar = document.querySelector(".navbar");
+        
+            let lastScrollTop = 0;
+        
+            window.addEventListener("scroll", function () {
+        
+                const currentScroll =
+                    window.pageYOffset ||
+                    document.documentElement.scrollTop;
+        
+                if (currentScroll <= 20) {
+                    navbar.style.transform = "translateY(0)";
+                    return;
+                }
+        
+                if (currentScroll > lastScrollTop) {
+        
+                    // scrolling down
+                    navbar.style.transform = "translateY(-100%)";
+        
+                } else {
+        
+                    // scrolling up
+                    navbar.style.transform = "translateY(0)";
+        
+                }
+        
+                lastScrollTop = currentScroll;
+        
+            });
+        
+        });
+        </script>
   </body>
 </html>

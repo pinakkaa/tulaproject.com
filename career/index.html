@@ -32,7 +32,7 @@
           <img src="../Images/logo.png" alt="" height="70" width="120" />
         </a>
 
-        <a href="#" class="book-btn project-enquiry-btn">BOOK NOW</a>
+        <a href="#" class="book-btn project-enquiry-btn">ENQUIRE NOW</a>
       </nav>
 
       <!-- ─── OVERLAY ─── -->
@@ -168,7 +168,7 @@
                 Drive sales of residential and commercial properties. Build
                 strong client relationships, identify new business
                 opportunities, and meet monthly targets. Excellent communication
-                and negotiation skills required. <br>
+                and negotiation skills required. <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Sales Executive')"
@@ -186,7 +186,8 @@
               <div class="accordion-body">
                 Oversee end-to-end project delivery from planning to handover.
                 Coordinate with architects, contractors, and vendors. Ensure
-                timelines, budgets, and quality standards are met consistently. <br>
+                timelines, budgets, and quality standards are met consistently.
+                <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Project Manager')"
@@ -205,7 +206,7 @@
                 Lead design and planning of residential and commercial
                 developments. Collaborate with engineering and interior teams to
                 create functional, aesthetic, and sustainable spaces that
-                reflect TULA's vision. <br>
+                reflect TULA's vision. <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Lead Architect')"
@@ -224,7 +225,7 @@
                 Develop and execute brand strategy across all channels. Manage
                 campaigns, oversee content creation, and maintain brand
                 consistency. Work closely with sales and leadership to
-                strengthen market presence. <br>
+                strengthen market presence. <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Brand Manager')"
@@ -238,73 +239,45 @@
           <!-- Right: Apply Form -->
           <div class="form-col">
             <h3>JOIN OUR TEAM</h3>
-
-            <!-- Name -->
-            <div class="form-row">
-              <input type="text" id="candidateName" placeholder="Name" />
-            </div>
-
-            <!-- Mobile + Email -->
-            <div class="form-row">
-              <div class="mobile-group">
-                <select id="countryCode">
-                  <option value="+91">🇮🇳 +91</option>
-                  <option value="+1">🇺🇸 +1</option>
-                  <option value="+44">🇬🇧 +44</option>
-                  <option value="+971">🇦🇪 +971</option>
-                </select>
-
-                <input
-                  type="tel"
-                  id="mobileNumber"
-                  placeholder="Mobile Number"
-                />
-              </div>
-
-              <input type="email" id="candidateEmail" placeholder="Email" />
-            </div>
-
-            <!-- Role -->
-            <div class="form-row">
-              <select id="careerRole" onchange="toggleOtherRole()">
-                <option value="">Select Role</option>
-                <option value="Sales Executive">Sales Executive</option>
-                <option value="Project Manager">Project Manager</option>
-                <option value="Lead Architect">Lead Architect</option>
-                <option value="Brand Manager">Brand Manager</option>
-                <option value="Other">Other</option>
-              </select>
-
-              <input
-                type="text"
-                id="otherRole"
-                placeholder="Enter Role"
-                style="display: none"
-              />
-            </div>
-
-            <!-- CTC -->
-            <div class="form-row">
-              <input type="text" id="currentCTC" placeholder="Current CTC" />
-
-              <input type="text" id="expectedCTC" placeholder="Expected CTC" />
-            </div>
-
-            <!-- Resume Upload -->
-            <!-- <div class="file-wrapper">
-              <label for="resumeUpload">Upload Resume</label>
-
-              <input
-                type="file"
-                id="resumeUpload"
-                onchange="updateFileName(this)"
-              />
-
-              <span class="file-name" id="file-name"> No file chosen </span>
-            </div> -->
-
-            <button class="btn-submit">Submit Application</button>
-          </div>
+        
+            <form id="joinTeamForm">
+                <div class="form-row">
+                    <input type="text" id="candidateName" placeholder="Name" />
+                </div>
+                <div class="form-row">
+                    <div class="mobile-group">
+                        <select id="countryCode">
+                            <option value="+91">🇮🇳 +91</option>
+                            <option value="+1">🇺🇸 +1</option>
+                            <option value="+44">🇬🇧 +44</option>
+                            <option value="+971">🇦🇪 +971</option>
+                        </select>
+                        <input type="tel" id="mobileNumber" placeholder="Mobile Number" />
+                    </div>
+                    <input type="email" id="candidateEmail" placeholder="Email" />
+                </div>
+                <div class="form-row">
+                    <select id="careerRole" onchange="toggleOtherRole()">
+                        <option value="">Select Role</option>
+                        <option value="Sales Executive">Sales Executive</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Lead Architect">Lead Architect</option>
+                        <option value="Brand Manager">Brand Manager</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="text" id="otherRole" placeholder="Enter Role" style="display:none" />
+                </div>
+                <div class="form-row">
+                    <input type="text" id="currentCTC" placeholder="Current CTC" />
+                    <input type="text" id="expectedCTC" placeholder="Expected CTC" />
+                </div>
+        
+                <p id="jtSuccess" style="display:none; color:green; margin-bottom:8px; font-weight:600;">✅ Application submitted successfully!</p>
+                <p id="jtError" style="display:none; color:red; margin-bottom:8px; font-weight:600;">❌ Something went wrong. Please try again.</p>
+        
+                <button type="submit" class="btn-submit" id="jtSubmitBtn">Submit Application</button>
+            </form>
+        </div>
         </div>
       </section>
       <!-- <section class="smart-move-section">
@@ -540,171 +513,389 @@
     </main>
     <div class="career-popup-overlay" id="careerPopup">
       <div class="career-popup-box">
-        <button class="career-popup-close" onclick="closeCareerPopup()">
-          &times;
-        </button>
-
-        <h3>Apply For Position</h3>
-
-        <div class="form-row">
-          <input type="text" id="popupName" placeholder="Name" />
-        </div>
-
-        <div class="form-row">
-          <div class="mobile-group">
-            <select>
-              <option>🇮🇳 +91</option>
-              <option>🇺🇸 +1</option>
-              <option>🇬🇧 +44</option>
-              <option>🇦🇪 +971</option>
-            </select>
-
-            <input type="tel" placeholder="Mobile Number" />
-          </div>
-
-          <input type="email" placeholder="Email" />
-        </div>
-
-        <div class="form-row">
-          <select id="popupRole" onchange="togglePopupOtherRole()">
-            <option value="">Select Role</option>
-
-            <option value="Sales Executive">Sales Executive</option>
-
-            <option value="Project Manager">Project Manager</option>
-
-            <option value="Lead Architect">Lead Architect</option>
-
-            <option value="Brand Manager">Brand Manager</option>
-
-            <option value="Other">Other</option>
-          </select>
-
-          <input
-            type="text"
-            id="popupOtherRole"
-            placeholder="Enter Role"
-            style="display: none"
-          />
-        </div>
-
-        <div class="form-row">
-          <input type="text" placeholder="Current CTC" />
-
-          <input type="text" placeholder="Expected CTC" />
-        </div>
-
-        <!-- <div class="file-wrapper">
-          <label for="popupResume"> Upload Resume </label>
-
-          <input type="file" id="popupResume" />
-
-          <span class="file-name"> No file chosen </span>
-        </div> -->
-
-        <button class="btn-submit">Submit Application</button>
+          <button class="career-popup-close" onclick="closeCareerPopup()">&times;</button>
+  
+          <h3>Apply For Position</h3>
+  
+          <form id="careerPopupForm">
+              <div class="form-row">
+                  <input type="text" id="popupName" placeholder="Name" />
+              </div>
+              <div class="form-row">
+                  <div class="mobile-group">
+                      <select id="popupCountryCode">
+                          <option value="+91">🇮🇳 +91</option>
+                          <option value="+1">🇺🇸 +1</option>
+                          <option value="+44">🇬🇧 +44</option>
+                          <option value="+971">🇦🇪 +971</option>
+                      </select>
+                      <input type="tel" id="popupMobile" placeholder="Mobile Number" />
+                  </div>
+                  <input type="email" id="popupEmail" placeholder="Email" />
+              </div>
+              <div class="form-row">
+                  <select id="popupRole" onchange="togglePopupOtherRole()">
+                      <option value="">Select Role</option>
+                      <option value="Sales Executive">Sales Executive</option>
+                      <option value="Project Manager">Project Manager</option>
+                      <option value="Lead Architect">Lead Architect</option>
+                      <option value="Brand Manager">Brand Manager</option>
+                      <option value="Other">Other</option>
+                  </select>
+                  <input type="text" id="popupOtherRole" placeholder="Enter Role" style="display:none" />
+              </div>
+              <div class="form-row">
+                  <input type="text" id="popupCurrentCTC" placeholder="Current CTC" />
+                  <input type="text" id="popupExpectedCTC" placeholder="Expected CTC" />
+              </div>
+  
+              <p id="cpSuccess" style="display:none; color:green; margin-bottom:8px; font-weight:600;">✅ Application submitted successfully!</p>
+              <p id="cpError" style="display:none; color:red; margin-bottom:8px; font-weight:600;">❌ Something went wrong. Please try again.</p>
+  
+              <button type="submit" class="btn-submit" id="cpSubmitBtn">Submit Application</button>
+          </form>
       </div>
-    </div>
+  </div>
 
     <div class="apartment-modal-overlay" id="apartmentModal">
-        <div class="apartment-modal-box">
-            <button class="apartment-close-btn" id="apartmentClose">&times;</button>
-    
-            <div class="apartment-modal-header">
-                <span class="apartment-badge">Upcoming Project</span>
-                <h2>APARTMENT PROJECT</h2>
-                <p>Register your interest to receive exclusive updates, project launch information, floor plans, pricing details, and priority booking opportunities.</p>
-            </div>
-    
-            <form class="apartment-form" id="apartmentForm">
-                <div class="apartment-form-group">
-                    <input id="apt-name" type="text" placeholder="Full Name" required/>
-                </div>
-                <div class="apartment-form-group apartment-phone-group">
-                    <select id="apartment-country-code" required>
-                        <option value="+91">🇮🇳 +91</option>
-                        <option value="+1">🇺🇸 +1</option>
-                        <option value="+44">🇬🇧 +44</option>
-                        <option value="+971">🇦🇪 +971</option>
-                        <option value="+65">🇸🇬 +65</option>
-                        <option value="+61">🇦🇺 +61</option>
-                    </select>
-                    <input id="apartment-mobile" type="tel" placeholder="Mobile Number" required/>
-                </div>
-                <div class="apartment-form-group">
-                    <input id="apt-email" type="email" placeholder="Email Address" required/>
-                </div>
-    
-                <button type="submit" class="apartment-submit-btn" id="aptSubmitBtn">
-                    Submit Interest
-                </button>
-    
-                <p id="aptSuccess" style="display:none; color:green; margin-top:10px; font-weight:600;">✅ Interest submitted successfully! We'll be in touch soon.</p>
-                <p id="aptError" style="display:none; color:red; margin-top:10px; font-weight:600;">❌ Something went wrong. Please try again.</p>
-            </form>
+      <div class="apartment-modal-box">
+        <button class="apartment-close-btn" id="apartmentClose">&times;</button>
+
+        <div class="apartment-modal-header">
+          <span class="apartment-badge">Upcoming Project</span>
+          <h2>APARTMENT PROJECT</h2>
+          <p>
+            Register your interest to receive exclusive updates, project launch
+            information, floor plans, pricing details, and priority booking
+            opportunities.
+          </p>
         </div>
+
+        <form class="apartment-form" id="apartmentForm">
+          <div class="apartment-form-group">
+            <input id="apt-name" type="text" placeholder="Full Name" required />
+          </div>
+          <div class="apartment-form-group apartment-phone-group">
+            <select id="apartment-country-code" required>
+              <option value="+91">🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+              <option value="+61">🇦🇺 +61</option>
+            </select>
+            <input
+              id="apartment-mobile"
+              type="tel"
+              placeholder="Mobile Number"
+              required
+            />
+          </div>
+          <div class="apartment-form-group">
+            <input
+              id="apt-email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <button type="submit" class="apartment-submit-btn" id="aptSubmitBtn">
+            Submit Interest
+          </button>
+
+          <p
+            id="aptSuccess"
+            style="
+              display: none;
+              color: green;
+              margin-top: 10px;
+              font-weight: 600;
+            "
+          >
+            ✅ Interest submitted successfully! We'll be in touch soon.
+          </p>
+          <p
+            id="aptError"
+            style="
+              display: none;
+              color: red;
+              margin-top: 10px;
+              font-weight: 600;
+            "
+          >
+            ❌ Something went wrong. Please try again.
+          </p>
+        </form>
+      </div>
     </div>
 
     <!-- PROJECT ENQUIRY POPUP -->
 
-        <!-- PROJECT ENQUIRY POPUP -->
-        <div class="project-enquiry-popup" id="projectEnquiryPopup">
-            <div class="project-enquiry-container">
-                <button class="project-enquiry-close" id="projectEnquiryClose">
-                    &times;
-                </button>
-        
-                <div class="project-enquiry-header">
-                    <h2>PROJECT ENQUIRY</h2>
-                    <p>Share your details and select your preferred project. Our team will contact you shortly.</p>
-                </div>
-        
-                <form id="projectEnquiryForm">
-                    <div class="project-enquiry-field">
-                        <input id="pe-name" type="text" name="name" placeholder="Full Name" required/>
-                    </div>
-                    <div class="project-enquiry-field pe-phone-group">
+    <!-- PROJECT ENQUIRY POPUP -->
+    <div class="project-enquiry-popup" id="projectEnquiryPopup">
+      <div class="project-enquiry-container">
+        <button class="project-enquiry-close" id="projectEnquiryClose">
+          &times;
+        </button>
 
-                        <select id="pe-country-code" required>
-                            <option value="+91">🇮🇳 +91</option>
-                            <option value="+1">🇺🇸 +1</option>
-                            <option value="+44">🇬🇧 +44</option>
-                            <option value="+971">🇦🇪 +971</option>
-                            <option value="+65">🇸🇬 +65</option>
-                            <option value="+61">🇦🇺 +61</option>
-                        </select>
-                    
-                        <input
-                            id="pe-mobile"
-                            type="tel"
-                            name="mobile"
-                            placeholder="Mobile Number"
-                            required
-                        />
-                    
-                    </div>
-                    <div class="project-enquiry-field">
-                        <input id="pe-email" type="email" name="email" placeholder="Email Address" required/>
-                    </div>
-                    <div class="project-enquiry-field">
-                        <select id="pe-project" name="project" required>
-                            <option value="">Select Project</option>
-                            <option value="Rhythm Of Earth">Rhythms Of Earth</option>
-                            <option value="Apartment Project">Apartment Project</option>
-                        </select>
-                    </div>
-        
-                    <button type="submit" class="project-enquiry-submit" id="peSubmitBtn">
-                        Submit Enquiry
-                    </button>
-        
-                    <p id="peSuccess" style="display:none; color:green; margin-top:10px; font-weight:600;">✅ Enquiry submitted successfully! We'll contact you shortly.</p>
-                    <p id="peError" style="display:none; color:red; margin-top:10px; font-weight:600;">❌ Something went wrong. Please try again.</p>
-                </form>
-            </div>
+        <div class="project-enquiry-header">
+          <h2>PROJECT ENQUIRY</h2>
+          <p>
+            Share your details and select your preferred project. Our team will
+            contact you shortly.
+          </p>
         </div>
+
+        <form id="projectEnquiryForm">
+          <div class="project-enquiry-field">
+            <input
+              id="pe-name"
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="project-enquiry-field pe-phone-group">
+            <select id="pe-country-code" required>
+              <option value="+91">🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+              <option value="+61">🇦🇺 +61</option>
+            </select>
+
+            <input
+              id="pe-mobile"
+              type="tel"
+              name="mobile"
+              placeholder="Mobile Number"
+              required
+            />
+          </div>
+          <div class="project-enquiry-field">
+            <input
+              id="pe-email"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="project-enquiry-field">
+            <select id="pe-project" name="project" required>
+              <option value="">Select Project</option>
+              <option value="Rhythm Of Earth">Rhythms Of Earth</option>
+              <option value="Apartment Project">Apartment Project</option>
+            </select>
+          </div>
+
+          <button type="submit" class="project-enquiry-submit" id="peSubmitBtn">
+            Submit Enquiry
+          </button>
+
+          <p
+            id="peSuccess"
+            style="
+              display: none;
+              color: green;
+              margin-top: 10px;
+              font-weight: 600;
+            "
+          >
+            ✅ Enquiry submitted successfully! We'll contact you shortly.
+          </p>
+          <p
+            id="peError"
+            style="
+              display: none;
+              color: red;
+              margin-top: 10px;
+              font-weight: 600;
+            "
+          >
+            ❌ Something went wrong. Please try again.
+          </p>
+        </form>
+      </div>
+    </div>
     <script src="../navbar.js"></script>
     <script src="../footer-email.js"></script>
+    <script>
+      // ── Form 1: Join Our Team ──
+document.getElementById("joinTeamForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const role = document.getElementById("careerRole").value;
+    const otherRole = document.getElementById("otherRole").value.trim();
+
+    const payload = {
+        form_source: "Join Our Team Form",
+        name: document.getElementById("candidateName").value.trim(),
+        country_code: document.getElementById("countryCode").value,
+        mobile: document.getElementById("mobileNumber").value.trim(),
+        email: document.getElementById("candidateEmail").value.trim(),
+        role: role === "Other" ? otherRole : role,
+        current_ctc: document.getElementById("currentCTC").value.trim(),
+        expected_ctc: document.getElementById("expectedCTC").value.trim()
+    };
+
+    await submitCareerForm(
+        payload,
+        document.getElementById("jtSubmitBtn"),
+        document.getElementById("jtSuccess"),
+        document.getElementById("jtError"),
+        "joinTeamForm"
+    );
+});
+
+// ── Form 2: Career Popup ──
+document.getElementById("careerPopupForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const role = document.getElementById("popupRole").value;
+    const otherRole = document.getElementById("popupOtherRole").value.trim();
+
+    const payload = {
+        form_source: "Career Popup Form",
+        name: document.getElementById("popupName").value.trim(),
+        country_code: document.getElementById("popupCountryCode").value,
+        mobile: document.getElementById("popupMobile").value.trim(),
+        email: document.getElementById("popupEmail").value.trim(),
+        role: role === "Other" ? otherRole : role,
+        current_ctc: document.getElementById("popupCurrentCTC").value.trim(),
+        expected_ctc: document.getElementById("popupExpectedCTC").value.trim()
+    };
+
+    await submitCareerForm(
+        payload,
+        document.getElementById("cpSubmitBtn"),
+        document.getElementById("cpSuccess"),
+        document.getElementById("cpError"),
+        "careerPopupForm"
+    );
+});
+      // ── Other Role Toggle ──
+      function toggleOtherRole() {
+        const role = document.getElementById("jt-role").value;
+        document.getElementById("jt-otherRole").style.display =
+          role === "Other" ? "block" : "none";
+      }
+
+      function togglePopupOtherRole() {
+        const role = document.getElementById("cp-role").value;
+        document.getElementById("cp-otherRole").style.display =
+          role === "Other" ? "block" : "none";
+      }
+
+      // ── Shared Submit Function ──
+      async function submitCareerForm(
+        payload,
+        submitBtn,
+        successMsg,
+        errorMsg,
+        formId,
+      ) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
+        successMsg.style.display = "none";
+        errorMsg.style.display = "none";
+
+        try {
+          const response = await fetch(
+            "https://emailjsfuntions-428145106157.asia-south1.run.app/tula-career-form",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            },
+          );
+
+          const result = await response.json();
+
+          if (response.ok && result.success) {
+            successMsg.style.display = "block";
+            document.getElementById(formId).reset();
+          } else {
+            errorMsg.style.display = "block";
+          }
+        } catch (err) {
+          console.error(err);
+          errorMsg.style.display = "block";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = "Submit Application";
+        }
+      }
+
+      // ── Form 1: Join Our Team ──
+      document
+        .getElementById("joinTeamForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const role = document.getElementById("jt-role").value;
+          const otherRole = document
+            .getElementById("jt-otherRole")
+            .value.trim();
+
+          const payload = {
+            form_source: "Join Our Team Form",
+            name: document.getElementById("jt-name").value.trim(),
+            country_code: document.getElementById("jt-countryCode").value,
+            mobile: document.getElementById("jt-mobile").value.trim(),
+            email: document.getElementById("jt-email").value.trim(),
+            role: role === "Other" ? otherRole : role,
+            current_ctc: document.getElementById("jt-currentCTC").value.trim(),
+            expected_ctc: document
+              .getElementById("jt-expectedCTC")
+              .value.trim(),
+          };
+
+          await submitCareerForm(
+            payload,
+            document.getElementById("jtSubmitBtn"),
+            document.getElementById("jtSuccess"),
+            document.getElementById("jtError"),
+            "joinTeamForm",
+          );
+        });
+
+      // ── Form 2: Career Popup ──
+      document
+        .getElementById("careerPopupForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const role = document.getElementById("cp-role").value;
+          const otherRole = document
+            .getElementById("cp-otherRole")
+            .value.trim();
+
+          const payload = {
+            form_source: "Career Popup Form",
+            name: document.getElementById("cp-name").value.trim(),
+            country_code: document.getElementById("cp-countryCode").value,
+            mobile: document.getElementById("cp-mobile").value.trim(),
+            email: document.getElementById("cp-email").value.trim(),
+            role: role === "Other" ? otherRole : role,
+            current_ctc: document.getElementById("cp-currentCTC").value.trim(),
+            expected_ctc: document
+              .getElementById("cp-expectedCTC")
+              .value.trim(),
+          };
+
+          await submitCareerForm(
+            payload,
+            document.getElementById("cpSubmitBtn"),
+            document.getElementById("cpSuccess"),
+            document.getElementById("cpError"),
+            "careerPopupForm",
+          );
+        });
+    </script>
     <script>
       function toggleOtherRole() {
         const role = document.getElementById("careerRole");

@@ -134,11 +134,18 @@
 
   .form-col h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #8b4513;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .form-col p{
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    color: #353432;
     text-align: center;
     margin-bottom: 20px;
   }

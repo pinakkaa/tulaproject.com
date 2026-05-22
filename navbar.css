@@ -301,7 +301,9 @@
     letter-spacing: 20px;
     user-select: none;
 }
-
+#projectsSubPanel .sub-group-title{
+  font-weight:700;
+}
 
 @media(max-width: 992px) {
 
@@ -313,6 +315,422 @@
       display: none;
     }
 }
+
+
+
+
+
+/* =========================
+   APARTMENT POPUP MODAL
+========================= */
+
+.apartment-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.35s ease;
+  z-index: 999999;
+}
+
+.apartment-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.apartment-modal-box {
+  position: relative;
+
+  width: 92%;
+  max-width: 520px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 40px;
+
+  transform: translateY(40px);
+  transition: all 0.35s ease;
+
+  box-shadow:
+      0 20px 60px rgba(0,0,0,0.25);
+}
+
+.apartment-modal-overlay.active .apartment-modal-box {
+  transform: translateY(0);
+}
+
+.apartment-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 28px;
+  cursor: pointer;
+
+  color: #555;
+}
+
+.apartment-close-btn:hover {
+  color: #000;
+}
+
+.apartment-modal-header {
+  margin-bottom: 28px;
+}
+
+.apartment-badge {
+  display: inline-block;
+
+  padding: 7px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(206,137,80,0.12);
+
+  color: #9b673c;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.apartment-modal-header h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #8C5120;
+}
+
+.apartment-modal-header p {
+  color: #666666d1;
+  line-height: 1.5;
+  font-size: 13.5px;
+}
+
+.apartment-form-group {
+  margin-bottom: 15px;
+}
+
+.apartment-form-group input {
+  width: 100%;
+
+  height: 46px;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+
+  padding: 0 18px;
+
+  font-size: 15px;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.apartment-form-group input:focus {
+  border-color: #9b673c;
+}
+
+.apartment-submit-btn {
+  width: 100%;
+  height: 46px;
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 10px;
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(
+      90deg,
+      #CE8950,
+      #9B673C,
+      #7A4E2B
+  );
+
+  transition: all 0.3s ease;
+}
+
+.apartment-submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .apartment-modal-box {
+      padding: 25px;
+  }
+
+  .apartment-modal-header h2 {
+      font-size: 24px;
+  }
+
+}
+
+
+/* ===========================
+   PROJECT ENQUIRY POPUP
+=========================== */
+
+.project-enquiry-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s ease;
+
+  z-index: 99999;
+}
+
+.project-enquiry-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-enquiry-container {
+  width: 90%;
+  max-width: 500px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  padding: 35px;
+
+  position: relative;
+}
+
+.project-enquiry-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.project-enquiry-header {
+  margin-bottom: 25px;
+}
+
+.project-enquiry-header h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #8C5120;
+}
+
+.project-enquiry-header p {
+  color: #666666d8;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.project-enquiry-field {
+  margin-bottom: 12px;
+}
+
+.project-enquiry-field input,
+.project-enquiry-field select {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+  font-size: 14px;
+}
+
+.project-enquiry-field input:focus,
+.project-enquiry-field select:focus {
+  border-color: #b97c48;
+}
+
+.project-enquiry-submit {
+  width: 100%;
+  height: 45px;
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 8px;
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+
+  background: linear-gradient(
+      90deg,
+      #CE8950,
+      #9B673C,
+      #7A4E2B
+  );
+}
+
+.project-enquiry-submit:hover {
+  opacity: 0.95;
+}
+
+
+
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-group select {
+  width: 75px;
+  /* min-width: 80px; */
+  padding: 8px;
+  border: 1px solid #d8c4abc0;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  font-family: inherit;
+}
+#footer-country-code option{
+  color: #000;
+}
+
+.phone-group input {
+  flex: 1;
+}
+
+
+/* Project Enquiry Phone Field */
+
+.pe-phone-group {
+  display: flex;
+  width: 100%;
+  border: 1px solid #d8c4ab;
+  background: #fff;
+  overflow: hidden;
+}
+
+.pe-phone-group select {
+  width: 80px;
+  border: none;
+  border-right: 1px solid #d8c4ab;
+  padding: 14px 12px;
+  background: #fff;
+  color: #3d2b1a;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pe-phone-group input {
+  flex: 1;
+  border: none !important;
+  width: 100%;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+  .pe-phone-group {
+      flex-direction: column;
+  }
+
+  .pe-phone-group select {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #d8c4ab;
+  }
+
+}
+
+
+/* Apartment Popup Phone Field */
+
+.apartment-phone-group {
+  display: flex;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.apartment-phone-group select {
+  width: 80px;
+  border: none;
+  border-right: 1px solid #e3e3e3;
+  padding: 14px 12px;
+  background: #fff;
+  color: #3d2b1a;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.apartment-phone-group input {
+  flex: 1;
+  border: none !important;
+  width: 100%;
+  padding: 14px 16px;
+  outline: none;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .apartment-phone-group {
+      flex-direction: column;
+  }
+
+  .apartment-phone-group select {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #d8c4ab;
+  }
+
+}
+
+
 
 
 /* footer */

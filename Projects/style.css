@@ -2621,3 +2621,13 @@ h2.project-title {
   }
 
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    background-image: url(./Images/ROE-Mobile.png);
+    height: 70vh;
+  }
+}

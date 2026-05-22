@@ -718,3 +718,301 @@
   }
 
 }
+
+
+
+/* =====================================================
+CAREER ENHANCEMENTS
+===================================================== */
+
+.form-col select,
+.career-popup-box select {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e0cbb2;
+    padding: 14px 16px;
+    font-size: 13.5px;
+    color: #3d2b1a;
+    outline: none;
+}
+
+.mobile-group {
+    display: flex;
+    width: 100%;
+}
+
+.mobile-group select {
+    width: 80px;
+    border-right: 0;
+}
+
+.mobile-group input {
+    flex: 1;
+}
+
+.apply-now-btn {
+    margin-top: 18px;
+    background: transparent;
+    border: 1px solid #8b4513;
+    color: #8b4513;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.apply-now-btn:hover {
+    background: #8b4513;
+    color: #fff;
+}
+
+/* Popup */
+
+.career-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.career-popup-overlay.active {
+    display: flex;
+}
+
+.career-popup-box {
+    width: 90%;
+    max-width: 700px;
+    background: #f5e6d0;
+    padding: 40px;
+    position: relative;
+}
+
+.career-popup-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #8b4513;
+}
+
+.career-popup-box h3 {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+CAREER POPUP FORM STYLING
+===================================================== */
+
+.career-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.career-popup-overlay.active {
+  display: flex;
+}
+
+.career-popup-box {
+  width: 90%;
+  max-width: 850px;
+  background: #f5e6d0;
+  padding: 40px;
+  position: relative;
+}
+
+.career-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 34px;
+  color: #8b4513;
+  cursor: pointer;
+}
+
+.career-popup-box h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b4513;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* ROW */
+
+.career-popup-box .form-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+/* INPUTS */
+
+.career-popup-box input[type="text"],
+.career-popup-box input[type="email"],
+.career-popup-box input[type="tel"],
+.career-popup-box select,
+.career-popup-box textarea {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e0cbb2;
+  padding: 14px 16px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+  color: #3d2b1a;
+  outline: none;
+  transition: border-color 0.25s ease;
+  appearance: none;
+}
+
+.career-popup-box input::placeholder,
+.career-popup-box textarea::placeholder {
+  color: #b8997a;
+}
+
+.career-popup-box input:focus,
+.career-popup-box textarea:focus,
+.career-popup-box select:focus {
+  border-color: #8b4513;
+}
+
+/* MOBILE FIELD */
+
+.career-popup-box .mobile-group {
+  display: flex;
+  width: 100%;
+}
+
+.career-popup-box .mobile-group select {
+  border-right: none;
+  width: 80px !important;
+}
+
+.career-popup-box .mobile-group input {
+  flex: 1;
+}
+
+/* FILE UPLOAD */
+
+.career-popup-box .file-wrapper {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e0cbb2;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.career-popup-box .file-wrapper label {
+  background: #f0e0cc;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #3d2b1a;
+  cursor: pointer;
+  border-right: 1px solid #e0cbb2;
+  white-space: nowrap;
+}
+
+.career-popup-box .file-wrapper input[type="file"] {
+  display: none;
+}
+
+.career-popup-box .file-name {
+  padding: 14px 18px;
+  color: #b8997a;
+  font-size: 13px;
+}
+
+/* BUTTON */
+
+.career-popup-box .btn-submit {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 1.5px solid #8b4513;
+  color: #3d2b1a;
+  padding: 14px 60px;
+  font-family: 'Jost', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.career-popup-box .btn-submit:hover {
+  background: #8b4513;
+  color: #fff;
+}
+
+/* FORCE WIDTH */
+
+.career-popup-box input,
+.career-popup-box select {
+  width: 100% !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .career-popup-box {
+      width: 95%;
+      padding: 25px;
+      max-height: 90vh;
+      overflow-y: auto;
+  }
+
+  .career-popup-box .form-row {
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  .career-popup-box .mobile-group {
+      flex-direction: column;
+  }
+
+  .career-popup-box .mobile-group select {
+      width: 100%;
+      min-width: 100%;
+      border-right: 1px solid #e0cbb2;
+      margin-bottom: 10px;
+  }
+
+  .career-popup-box .file-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .career-popup-box .file-wrapper label {
+      width: 100%;
+      text-align: center;
+  }
+
+  .career-popup-box .btn-submit {
+      width: 100%;
+  }
+}

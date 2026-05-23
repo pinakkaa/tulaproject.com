@@ -266,18 +266,17 @@ document
 // MOBILE PROJECTS SUBMENU
 // ====================================
 
-if (window.innerWidth <= 992) {
-  projectsMenu.addEventListener("click", function (e) {
-    // If user clicked the arrow
-    if (e.target.classList.contains("arrow-icon")) {
-      e.preventDefault();
+// if (window.innerWidth <= 992) {
+//   projectsMenu.addEventListener("click", function (e) {
+//     if (e.target.classList.contains("arrow-icon")) {
+//       e.preventDefault();
 
-      subPanel.classList.remove("open");
+//       subPanel.classList.remove("open");
 
-      projectsSubPanel.classList.toggle("open");
-    }
-  });
-}
+//       projectsSubPanel.classList.toggle("open");
+//     }
+//   });
+// }
 
 const navbar = document.querySelector(".navbar");
 

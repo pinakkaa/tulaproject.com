@@ -26,6 +26,11 @@
     width: 100vw;
 }
 
+.hero-video{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
   
 /* Why Choose Us Section */
 
@@ -44,7 +49,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: -10px;
 }
   .why-choose-us-section-wrapper {
     display: flex;

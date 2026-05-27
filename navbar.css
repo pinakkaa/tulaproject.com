@@ -1012,12 +1012,12 @@
     .footer-copyright {
         /* max-width: 1440px; */
         margin: 0 auto;
-        padding: 30px;
+        padding: 20px;
         background: linear-gradient(135deg, #8c5120, #75441b, #75441b, #8c5120);
         text-align: center;
     }
     .footer-copyright p {
-        font-size: 12px;
+        font-size: 10px;
         color: var(--white-60);
         font-weight: 400;
     }

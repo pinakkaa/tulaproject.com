@@ -107,10 +107,10 @@
             </li>
 
             <!-- <li>
-                                                                    <a href="./leadership/#team">
-                                                                        Leadership Team
-                                                                    </a>
-                                                                </li> -->
+                                                                                                                    <a href="./leadership/#team">
+                                                                                                                        Leadership Team
+                                                                                                                    </a>
+                                                                                                                </li> -->
           </ul>
         </div>
       </div>
@@ -168,7 +168,8 @@
                 Drive sales of residential and commercial properties. Build
                 strong client relationships, identify new business
                 opportunities, and meet monthly targets. Excellent communication
-                and negotiation skills required. <br />
+                and negotiation skills required.
+                <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Sales Executive')"
@@ -206,7 +207,8 @@
                 Lead design and planning of residential and commercial
                 developments. Collaborate with engineering and interior teams to
                 create functional, aesthetic, and sustainable spaces that
-                reflect TULA's vision. <br />
+                reflect TULA's vision.
+                <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Lead Architect')"
@@ -225,7 +227,8 @@
                 Develop and execute brand strategy across all channels. Manage
                 campaigns, oversee content creation, and maintain brand
                 consistency. Work closely with sales and leadership to
-                strengthen market presence. <br />
+                strengthen market presence.
+                <br />
                 <button
                   class="apply-now-btn"
                   onclick="openCareerPopup('Brand Manager')"
@@ -239,61 +242,108 @@
           <!-- Right: Apply Form -->
           <div class="form-col">
             <h3>JOIN OUR TEAM</h3>
-        
+
             <form id="joinTeamForm">
-                <div class="form-row">
-                    <input type="text" id="candidateName" placeholder="Name" />
+              <div class="form-row">
+                <input type="text" id="candidateName" placeholder="Name" />
+              </div>
+              <div class="form-row">
+                <div class="mobile-group">
+                  <select id="countryCode">
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+971">🇦🇪 +971</option>
+                  </select>
+                  <input
+                    type="tel"
+                    id="mobileNumber"
+                    placeholder="Mobile Number"
+                  />
                 </div>
-                <div class="form-row">
-                    <div class="mobile-group">
-                        <select id="countryCode">
-                            <option value="+91">🇮🇳 +91</option>
-                            <option value="+1">🇺🇸 +1</option>
-                            <option value="+44">🇬🇧 +44</option>
-                            <option value="+971">🇦🇪 +971</option>
-                        </select>
-                        <input type="tel" id="mobileNumber" placeholder="Mobile Number" />
-                    </div>
-                    <input type="email" id="candidateEmail" placeholder="Email" />
+                <input type="email" id="candidateEmail" placeholder="Email" />
+              </div>
+              <div class="form-row">
+                <select id="careerRole" onchange="toggleOtherRole()">
+                  <option value="">Select Role</option>
+                  <option value="Sales Executive">Sales Executive</option>
+                  <option value="Project Manager">Project Manager</option>
+                  <option value="Lead Architect">Lead Architect</option>
+                  <option value="Brand Manager">Brand Manager</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input
+                  type="text"
+                  id="otherRole"
+                  placeholder="Enter Role"
+                  style="display: none"
+                />
+              </div>
+              <div class="form-row">
+                <input type="text" id="currentCTC" placeholder="Current CTC" />
+                <input
+                  type="text"
+                  id="expectedCTC"
+                  placeholder="Expected CTC"
+                />
+              </div>
+              <div class="form-row">
+                <div class="resume-upload-wrapper">
+                  <input
+                    type="file"
+                    id="resumeUpload"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                  />
+
+                  <span id="resumeText">Upload Resume</span>
                 </div>
-                <div class="form-row">
-                    <select id="careerRole" onchange="toggleOtherRole()">
-                        <option value="">Select Role</option>
-                        <option value="Sales Executive">Sales Executive</option>
-                        <option value="Project Manager">Project Manager</option>
-                        <option value="Lead Architect">Lead Architect</option>
-                        <option value="Brand Manager">Brand Manager</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <input type="text" id="otherRole" placeholder="Enter Role" style="display:none" />
-                </div>
-                <div class="form-row">
-                    <input type="text" id="currentCTC" placeholder="Current CTC" />
-                    <input type="text" id="expectedCTC" placeholder="Expected CTC" />
-                </div>
-        
-                <p id="jtSuccess" style="display:none; color:green; margin-bottom:8px; font-weight:600;">✅ Application submitted successfully!</p>
-                <p id="jtError" style="display:none; color:red; margin-bottom:8px; font-weight:600;">❌ Something went wrong. Please try again.</p>
-        
-                <button type="submit" class="btn-submit" id="jtSubmitBtn">Submit Application</button>
+              </div>
+
+              <p
+                id="jtSuccess"
+                style="
+                  display: none;
+                  color: green;
+                  margin-bottom: 8px;
+                  font-weight: 600;
+                "
+              >
+                ✅ Application submitted successfully!
+              </p>
+              <p
+                id="jtError"
+                style="
+                  display: none;
+                  color: red;
+                  margin-bottom: 8px;
+                  font-weight: 600;
+                "
+              >
+                ❌ Something went wrong. Please try again.
+              </p>
+
+              <button type="submit" class="btn-submit" id="jtSubmitBtn">
+                Submit Application
+              </button>
             </form>
-        </div>
+          </div>
         </div>
       </section>
       <!-- <section class="smart-move-section">
-                <h2>Now Is The Time To Make Smart Move</h2>
-
-                <div class="smart-move-fields">
-                    <input type="text" id="sm-name" placeholder="Name"/>
-                    <input type="email" id="sm-email" placeholder="Email"/>
-                    <input type="tel" id="sm-mobile" placeholder="Mobile"/>
-                    <input type="text" id="sm-comment" placeholder="Leave a comment here"/>
-                </div>
-
-                <div class="smart-move-btn-wrap">
-                    <button class="btn-contact" onclick="handleContact()">Contact Us</button>
-                </div>
-            </section> -->
+                                        <h2>Now Is The Time To Make Smart Move</h2>
+                        
+                                        <div class="smart-move-fields">
+                                            <input type="text" id="sm-name" placeholder="Name"/>
+                                            <input type="email" id="sm-email" placeholder="Email"/>
+                                            <input type="tel" id="sm-mobile" placeholder="Mobile"/>
+                                            <input type="text" id="sm-comment" placeholder="Leave a comment here"/>
+                                        </div>
+                        
+                                        <div class="smart-move-btn-wrap">
+                                            <button class="btn-contact" onclick="handleContact()">Contact Us</button>
+                                        </div>
+                                    </section> -->
 
       <div class="toast" id="toast"></div>
       <footer>
@@ -486,7 +536,7 @@
                     href="https://youtube.com/@tulaproperties?si=XBnumqNP1SFFSUHt"
                     aria-label="YouTube"
                   >
-                    <svg viewBox="0 0 24 24" fill="currentColor">
+                    <svg viewbox="0 0 24 24" fill="currentColor">
                       <path
                         d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"
                       />
@@ -514,58 +564,103 @@
 
         <!-- ── COPYRIGHT ─────────────────────────── -->
         <div class="footer-copyright">
-          <p>© 2026
-              <span>Tula Properties</span>. All Rights Reserved. Digital Partner
-              <a href="www.pinakkaa.com" class="footer-partner">PINAKKAA</a>
+          <p>
+            © 2026
+            <span>Tula Properties</span>. All Rights Reserved.
           </p>
         </div>
       </footer>
     </main>
     <div class="career-popup-overlay" id="careerPopup">
       <div class="career-popup-box">
-          <button class="career-popup-close" onclick="closeCareerPopup()">&times;</button>
-  
-          <h3>Apply For Position</h3>
-  
-          <form id="careerPopupForm">
-              <div class="form-row">
-                  <input type="text" id="popupName" placeholder="Name" />
-              </div>
-              <div class="form-row">
-                  <div class="mobile-group">
-                      <select id="popupCountryCode">
-                          <option value="+91">🇮🇳 +91</option>
-                          <option value="+1">🇺🇸 +1</option>
-                          <option value="+44">🇬🇧 +44</option>
-                          <option value="+971">🇦🇪 +971</option>
-                      </select>
-                      <input type="tel" id="popupMobile" placeholder="Mobile Number" />
-                  </div>
-                  <input type="email" id="popupEmail" placeholder="Email" />
-              </div>
-              <div class="form-row">
-                  <select id="popupRole" onchange="togglePopupOtherRole()">
-                      <option value="">Select Role</option>
-                      <option value="Sales Executive">Sales Executive</option>
-                      <option value="Project Manager">Project Manager</option>
-                      <option value="Lead Architect">Lead Architect</option>
-                      <option value="Brand Manager">Brand Manager</option>
-                      <option value="Other">Other</option>
-                  </select>
-                  <input type="text" id="popupOtherRole" placeholder="Enter Role" style="display:none" />
-              </div>
-              <div class="form-row">
-                  <input type="text" id="popupCurrentCTC" placeholder="Current CTC" />
-                  <input type="text" id="popupExpectedCTC" placeholder="Expected CTC" />
-              </div>
-  
-              <p id="cpSuccess" style="display:none; color:green; margin-bottom:8px; font-weight:600;">✅ Application submitted successfully!</p>
-              <p id="cpError" style="display:none; color:red; margin-bottom:8px; font-weight:600;">❌ Something went wrong. Please try again.</p>
-  
-              <button type="submit" class="btn-submit" id="cpSubmitBtn">Submit Application</button>
-          </form>
+        <button class="career-popup-close" onclick="closeCareerPopup()">
+          &times;
+        </button>
+
+        <h3>Apply For Position</h3>
+
+        <form id="careerPopupForm">
+          <div class="form-row">
+            <input type="text" id="popupName" placeholder="Name" />
+          </div>
+          <div class="form-row">
+            <div class="mobile-group">
+              <select id="popupCountryCode">
+                <option value="+91">🇮🇳 +91</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+971">🇦🇪 +971</option>
+              </select>
+              <input type="tel" id="popupMobile" placeholder="Mobile Number" />
+            </div>
+            <input type="email" id="popupEmail" placeholder="Email" />
+          </div>
+          <div class="form-row">
+            <select id="popupRole" onchange="togglePopupOtherRole()">
+              <option value="">Select Role</option>
+              <option value="Sales Executive">Sales Executive</option>
+              <option value="Project Manager">Project Manager</option>
+              <option value="Lead Architect">Lead Architect</option>
+              <option value="Brand Manager">Brand Manager</option>
+              <option value="Other">Other</option>
+            </select>
+            <input
+              type="text"
+              id="popupOtherRole"
+              placeholder="Enter Role"
+              style="display: none"
+            />
+          </div>
+          <div class="form-row">
+            <input type="text" id="popupCurrentCTC" placeholder="Current CTC" />
+            <input
+              type="text"
+              id="popupExpectedCTC"
+              placeholder="Expected CTC"
+            />
+          </div>
+          <div class="form-row">
+            <div class="resume-upload-wrapper">
+              <input
+                type="file"
+                id="popupResumeUpload"
+                name="resume"
+                accept=".pdf,.doc,.docx"
+              />
+
+              <span id="resumeText">Upload Resume</span>
+            </div>
+          </div>
+
+          <p
+            id="cpSuccess"
+            style="
+              display: none;
+              color: green;
+              margin-bottom: 8px;
+              font-weight: 600;
+            "
+          >
+            ✅ Application submitted successfully!
+          </p>
+          <p
+            id="cpError"
+            style="
+              display: none;
+              color: red;
+              margin-bottom: 8px;
+              font-weight: 600;
+            "
+          >
+            ❌ Something went wrong. Please try again.
+          </p>
+
+          <button type="submit" class="btn-submit" id="cpSubmitBtn">
+            Submit Application
+          </button>
+        </form>
       </div>
-  </div>
+    </div>
 
     <div class="apartment-modal-overlay" id="apartmentModal">
       <div class="apartment-modal-box">
@@ -733,60 +828,70 @@
     </div>
     <script src="../navbar.js"></script>
     <script src="../footer-email.js"></script>
-    <script>
+    <!-- <script>
       // ── Form 1: Join Our Team ──
-document.getElementById("joinTeamForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+      document
+        .getElementById("joinTeamForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-    const role = document.getElementById("careerRole").value;
-    const otherRole = document.getElementById("otherRole").value.trim();
+          const role = document.getElementById("careerRole").value;
+          const otherRole = document.getElementById("otherRole").value.trim();
 
-    const payload = {
-        form_source: "Join Our Team Form",
-        name: document.getElementById("candidateName").value.trim(),
-        country_code: document.getElementById("countryCode").value,
-        mobile: document.getElementById("mobileNumber").value.trim(),
-        email: document.getElementById("candidateEmail").value.trim(),
-        role: role === "Other" ? otherRole : role,
-        current_ctc: document.getElementById("currentCTC").value.trim(),
-        expected_ctc: document.getElementById("expectedCTC").value.trim()
-    };
+          const payload = {
+            form_source: "Join Our Team Form",
+            name: document.getElementById("candidateName").value.trim(),
+            country_code: document.getElementById("countryCode").value,
+            mobile: document.getElementById("mobileNumber").value.trim(),
+            email: document.getElementById("candidateEmail").value.trim(),
+            role: role === "Other" ? otherRole : role,
+            current_ctc: document.getElementById("currentCTC").value.trim(),
+            expected_ctc: document.getElementById("expectedCTC").value.trim(),
+          };
 
-    await submitCareerForm(
-        payload,
-        document.getElementById("jtSubmitBtn"),
-        document.getElementById("jtSuccess"),
-        document.getElementById("jtError"),
-        "joinTeamForm"
-    );
-});
+          await submitCareerForm(
+            payload,
+            document.getElementById("jtSubmitBtn"),
+            document.getElementById("jtSuccess"),
+            document.getElementById("jtError"),
+            "joinTeamForm",
+          );
+        });
 
-// ── Form 2: Career Popup ──
-document.getElementById("careerPopupForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+      // ── Form 2: Career Popup ──
+      document
+        .getElementById("careerPopupForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-    const role = document.getElementById("popupRole").value;
-    const otherRole = document.getElementById("popupOtherRole").value.trim();
+          const role = document.getElementById("popupRole").value;
+          const otherRole = document
+            .getElementById("popupOtherRole")
+            .value.trim();
 
-    const payload = {
-        form_source: "Career Popup Form",
-        name: document.getElementById("popupName").value.trim(),
-        country_code: document.getElementById("popupCountryCode").value,
-        mobile: document.getElementById("popupMobile").value.trim(),
-        email: document.getElementById("popupEmail").value.trim(),
-        role: role === "Other" ? otherRole : role,
-        current_ctc: document.getElementById("popupCurrentCTC").value.trim(),
-        expected_ctc: document.getElementById("popupExpectedCTC").value.trim()
-    };
+          const payload = {
+            form_source: "Career Popup Form",
+            name: document.getElementById("popupName").value.trim(),
+            country_code: document.getElementById("popupCountryCode").value,
+            mobile: document.getElementById("popupMobile").value.trim(),
+            email: document.getElementById("popupEmail").value.trim(),
+            role: role === "Other" ? otherRole : role,
+            current_ctc: document
+              .getElementById("popupCurrentCTC")
+              .value.trim(),
+            expected_ctc: document
+              .getElementById("popupExpectedCTC")
+              .value.trim(),
+          };
 
-    await submitCareerForm(
-        payload,
-        document.getElementById("cpSubmitBtn"),
-        document.getElementById("cpSuccess"),
-        document.getElementById("cpError"),
-        "careerPopupForm"
-    );
-});
+          await submitCareerForm(
+            payload,
+            document.getElementById("cpSubmitBtn"),
+            document.getElementById("cpSuccess"),
+            document.getElementById("cpError"),
+            "careerPopupForm",
+          );
+        });
       // ── Other Role Toggle ──
       function toggleOtherRole() {
         const role = document.getElementById("jt-role").value;
@@ -818,8 +923,7 @@ document.getElementById("careerPopupForm").addEventListener("submit", async func
             "https://emailjsfuntions-428145106157.asia-south1.run.app/tula-career-form",
             {
               method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload),
+              body: formData,
             },
           );
 
@@ -851,18 +955,66 @@ document.getElementById("careerPopupForm").addEventListener("submit", async func
             .getElementById("jt-otherRole")
             .value.trim();
 
-          const payload = {
-            form_source: "Join Our Team Form",
-            name: document.getElementById("jt-name").value.trim(),
-            country_code: document.getElementById("jt-countryCode").value,
-            mobile: document.getElementById("jt-mobile").value.trim(),
-            email: document.getElementById("jt-email").value.trim(),
-            role: role === "Other" ? otherRole : role,
-            current_ctc: document.getElementById("jt-currentCTC").value.trim(),
-            expected_ctc: document
-              .getElementById("jt-expectedCTC")
-              .value.trim(),
-          };
+          // const payload = {
+          //   form_source: "Join Our Team Form",
+          //   name: document.getElementById("jt-name").value.trim(),
+          //   country_code: document.getElementById("jt-countryCode").value,
+          //   mobile: document.getElementById("jt-mobile").value.trim(),
+          //   email: document.getElementById("jt-email").value.trim(),
+          //   role: role === "Other" ? otherRole : role,
+          //   current_ctc: document.getElementById("jt-currentCTC").value.trim(),
+          //   expected_ctc: document
+          //     .getElementById("jt-expectedCTC")
+          //     .value.trim(),
+          // };
+          const formData = new FormData();
+
+          formData.append(
+            "form_source",
+            "Join Our Team Form"
+          );
+
+          formData.append(
+            "name",
+            document.getElementById("candidateName").value.trim()
+          );
+
+          formData.append(
+            "country_code",
+            document.getElementById("countryCode").value
+          );
+
+          formData.append(
+            "mobile",
+            document.getElementById("mobileNumber").value.trim()
+          );
+
+          formData.append(
+            "email",
+            document.getElementById("candidateEmail").value.trim()
+          );
+
+          formData.append(
+            "role",
+            role === "Other" ? otherRole : role
+          );
+
+          formData.append(
+            "current_ctc",
+            document.getElementById("currentCTC").value.trim()
+          );
+
+          formData.append(
+            "expected_ctc",
+            document.getElementById("expectedCTC").value.trim()
+          );
+
+          const resumeFile =
+            document.getElementById("resumeUpload").files[0];
+
+          if (resumeFile) {
+            formData.append("resume", resumeFile);
+          }
 
           await submitCareerForm(
             payload,
@@ -905,7 +1057,282 @@ document.getElementById("careerPopupForm").addEventListener("submit", async func
             "careerPopupForm",
           );
         });
+    </script> -->
+
+    <script>
+      // ============================================
+      // MAIN FORM SUBMIT
+      // ============================================
+    
+      document
+        .getElementById("joinTeamForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+    
+          await handleCareerFormSubmit({
+            formId: "joinTeamForm",
+            submitBtnId: "jtSubmitBtn",
+            successId: "jtSuccess",
+            errorId: "jtError",
+    
+            nameId: "candidateName",
+            countryCodeId: "countryCode",
+            mobileId: "mobileNumber",
+            emailId: "candidateEmail",
+    
+            roleId: "careerRole",
+            otherRoleId: "otherRole",
+    
+            currentCTCId: "currentCTC",
+            expectedCTCId: "expectedCTC",
+    
+            resumeId: "resumeUpload",
+    
+            formSource: "Join Our Team Form",
+          });
+        });
+    
+      // ============================================
+      // POPUP FORM SUBMIT
+      // ============================================
+    
+      document
+        .getElementById("careerPopupForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+    
+          await handleCareerFormSubmit({
+            formId: "careerPopupForm",
+            submitBtnId: "cpSubmitBtn",
+            successId: "cpSuccess",
+            errorId: "cpError",
+    
+            nameId: "popupName",
+            countryCodeId: "popupCountryCode",
+            mobileId: "popupMobile",
+            emailId: "popupEmail",
+    
+            roleId: "popupRole",
+            otherRoleId: "popupOtherRole",
+    
+            currentCTCId: "popupCurrentCTC",
+            expectedCTCId: "popupExpectedCTC",
+    
+            resumeId: "popupResumeUpload",
+    
+            formSource: "Career Popup Form",
+          });
+        });
+    
+      // ============================================
+      // COMMON SUBMIT FUNCTION
+      // ============================================
+    
+      async function handleCareerFormSubmit(config) {
+    
+        const submitBtn =
+          document.getElementById(config.submitBtnId);
+    
+        const successMsg =
+          document.getElementById(config.successId);
+    
+        const errorMsg =
+          document.getElementById(config.errorId);
+    
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
+    
+        successMsg.style.display = "none";
+        errorMsg.style.display = "none";
+    
+        try {
+    
+          const role =
+            document.getElementById(config.roleId).value;
+    
+          const otherRole =
+            document
+              .getElementById(config.otherRoleId)
+              .value
+              .trim();
+    
+          const formData = new FormData();
+    
+          formData.append(
+            "form_source",
+            config.formSource
+          );
+    
+          formData.append(
+            "name",
+            document
+              .getElementById(config.nameId)
+              .value
+              .trim()
+          );
+    
+          formData.append(
+            "country_code",
+            document
+              .getElementById(config.countryCodeId)
+              .value
+          );
+    
+          formData.append(
+            "mobile",
+            document
+              .getElementById(config.mobileId)
+              .value
+              .trim()
+          );
+    
+          formData.append(
+            "email",
+            document
+              .getElementById(config.emailId)
+              .value
+              .trim()
+          );
+    
+          formData.append(
+            "role",
+            role === "Other"
+              ? otherRole
+              : role
+          );
+    
+          formData.append(
+            "current_ctc",
+            document
+              .getElementById(config.currentCTCId)
+              .value
+              .trim()
+          );
+    
+          formData.append(
+            "expected_ctc",
+            document
+              .getElementById(config.expectedCTCId)
+              .value
+              .trim()
+          );
+    
+          const resumeFile =
+            document
+              .getElementById(config.resumeId)
+              .files[0];
+    
+          if (resumeFile) {
+            formData.append(
+              "resume",
+              resumeFile
+            );
+          }
+    
+          const response = await fetch(
+            "https://emailjsfuntions-428145106157.asia-south1.run.app/tula-career-form",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
+    
+          const result = await response.json();
+    
+          if (response.ok && result.success) {
+    
+            successMsg.style.display = "block";
+    
+            document
+              .getElementById(config.formId)
+              .reset();
+    
+          } else {
+    
+            errorMsg.style.display = "block";
+    
+          }
+    
+        } catch (error) {
+    
+          console.error(error);
+    
+          errorMsg.style.display = "block";
+    
+        } finally {
+    
+          submitBtn.disabled = false;
+    
+          submitBtn.innerHTML =
+            "Submit Application";
+        }
+      }
+    
+      // ============================================
+      // OTHER ROLE TOGGLE
+      // ============================================
+    
+      function toggleOtherRole() {
+    
+        const role =
+          document.getElementById("careerRole");
+    
+        const other =
+          document.getElementById("otherRole");
+    
+        other.style.display =
+          role.value === "Other"
+            ? "block"
+            : "none";
+      }
+    
+      function togglePopupOtherRole() {
+    
+        const role =
+          document.getElementById("popupRole");
+    
+        const other =
+          document.getElementById("popupOtherRole");
+    
+        other.style.display =
+          role.value === "Other"
+            ? "block"
+            : "none";
+      }
+    
+      // ============================================
+      // RESUME FILE NAME SHOW
+      // ============================================
+    
+      const resumeUpload =
+        document.getElementById("resumeUpload");
+    
+      const resumeText =
+        document.getElementById("resumeText");
+    
+      if (resumeUpload) {
+    
+        resumeUpload.addEventListener(
+          "change",
+          function () {
+    
+            if (this.files.length > 0) {
+    
+              resumeText.textContent =
+                this.files[0].name;
+    
+            } else {
+    
+              resumeText.textContent =
+                "Upload Resume";
+    
+            }
+          }
+        );
+      }
     </script>
+
+
     <script>
       function toggleOtherRole() {
         const role = document.getElementById("careerRole");
@@ -955,5 +1382,17 @@ document.getElementById("careerPopupForm").addEventListener("submit", async func
         }
       }
     </script>
+    <!-- <script>
+      const resumeUpload = document.getElementById("resumeUpload");
+      const resumeText = document.getElementById("resumeText");
+
+      resumeUpload.addEventListener("change", function () {
+        if (this.files.length > 0) {
+          resumeText.textContent = this.files[0].name;
+        } else {
+          resumeText.textContent = "Upload Resume";
+        }
+      });
+    </script> -->
   </body>
 </html>

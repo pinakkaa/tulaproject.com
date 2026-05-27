@@ -216,17 +216,38 @@
                         <input type="url" id="reg-website" placeholder="Website URL" />
                     </div>
                     <div class="file-row">
-                        <input type="text" id="reg-rera" placeholder="RERA Number" />
-                    </div>
-                    <div class="reg-row">
-                        <input type="text" id="reg-rera-expiry" placeholder="RERA Expiry Date" style="width:100%" />
-                    </div>
-                    <div class="file-row">
-                        <input type="text" id="reg-pan" placeholder="PAN Number" />
-                    </div>
-                    <div class="file-row">
-                        <input type="text" id="reg-gst" placeholder="GST Number" />
-                    </div>
+                      <input type="text" id="reg-rera" placeholder="RERA Number" />
+                  
+                      <div class="file-group">
+                          <label for="rera-file">Upload File</label>
+                          <input type="file" id="rera-file" />
+                          <span class="file-label" id="rera-file-name">No file uploaded</span>
+                      </div>
+                  </div>
+                  
+                  <div class="reg-row">
+                      <input type="text" id="reg-rera-expiry" placeholder="RERA Expiry Date" style="width:100%" />
+                  </div>
+                  
+                  <div class="file-row">
+                      <input type="text" id="reg-pan" placeholder="PAN Number" />
+                  
+                      <div class="file-group">
+                          <label for="pan-file">Upload File</label>
+                          <input type="file" id="pan-file" />
+                          <span class="file-label" id="pan-file-name">No file uploaded</span>
+                      </div>
+                  </div>
+                  
+                  <div class="file-row">
+                      <input type="text" id="reg-gst" placeholder="GST Number" />
+                  
+                      <div class="file-group">
+                          <label for="gst-file">Upload File</label>
+                          <input type="file" id="gst-file" />
+                          <span class="file-label" id="gst-file-name">No file uploaded</span>
+                      </div>
+                  </div>
                     <div class="privacy-row">
                         <input type="checkbox" id="privacy" />
                         <label for="privacy">I accept the <a href="../privacy-policy/index.html">Privacy Policy</a> and agree to be contacted.</label>
@@ -456,8 +477,9 @@
 
         <!-- ── COPYRIGHT ─────────────────────────── -->
         <div class="footer-copyright">
-          <p>
-            © 2026 <span>Tula Properties</span>. All Rights Reserved.
+          <p>© 2026
+              <span>Tula Properties</span>. All Rights Reserved. Digital Partner
+              <a href="www.pinakkaa.com" class="footer-partner">PINAKKAA</a>
           </p>
         </div>
       </footer>

@@ -681,3 +681,60 @@
   }
 
 }
+
+
+.file-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.file-row input[type="text"] {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #ddc9b0;
+  padding: 12px 14px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #3d2b1a;
+  outline: none;
+}
+
+.file-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddc9b0;
+  overflow: hidden;
+  min-height: 46px;
+}
+
+.file-group label {
+  background: #f4f4f4;
+  border-right: 1px solid #ddc9b0;
+  color: #8b5e3c;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.file-group input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  padding: 0 14px;
+  font-size: 13px;
+  color: #b89878;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
